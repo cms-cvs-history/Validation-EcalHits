@@ -1065,20 +1065,47 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
    }
 
  }
-
-
- Ecal->cd(1); 
+ Ecal->cd(1);
    snlayer1->Draw();
    rnlayer1->Draw("sames");
+   std::strstream buf1;
+   std::string value1;
+   double pv1 = rnlayer1->Chi2Test(snlayer1,"OU");
+   buf1<<"PV="<<pv1<<std::endl;
+   buf1>>value1;
+   te->DrawTextNDC(0.5,0.7, value1.c_str());
+
  Ecal->cd(2);
    snlayer2->Draw();
    rnlayer2->Draw("sames");
+   std::strstream buf2;
+   std::string value2;
+   double pv2 = rnlayer2->Chi2Test(snlayer2,"OU");
+   buf2<<"PV="<<pv2<<std::endl;
+   buf2>>value2;
+   te->DrawTextNDC(0.5,0.7, value2.c_str());
+
  Ecal->cd(3);
    selayer1->Draw();
    relayer1->Draw("sames");
+   std::strstream buf3;
+   std::string value3;
+   double pv3 = relayer1->Chi2Test(selayer1,"OU");
+   buf3<<"PV="<<pv3<<std::endl;
+   buf3>>value3;
+   te->DrawTextNDC(0.5,0.7, value3.c_str());
+
  Ecal->cd(4);
-   selayer1->Draw();
-   relayer1->Draw("sames");
+   selayer2->Draw();
+   relayer2->Draw("sames");
+   std::strstream buf4;
+   std::string value4;
+   double pv4 = relayer2->Chi2Test(selayer2,"OU");
+   buf4<<"PV="<<pv4<<std::endl;
+   buf4>>value4;
+   te->DrawTextNDC(0.5,0.7, value4.c_str());
+
+
 
  Ecal->Print("Preshower_ZPlus_Hit.eps");
  }
@@ -1159,19 +1186,46 @@ if(1) {
 
  }
 
-
  Ecal->cd(1);
    snlayer1->Draw();
    rnlayer1->Draw("sames");
+   std::strstream buf1;
+   std::string value1;
+   double pv1 = rnlayer1->Chi2Test(snlayer1,"OU");
+   buf1<<"PV="<<pv1<<std::endl;
+   buf1>>value1;
+   te->DrawTextNDC(0.5,0.7, value1.c_str());
+
  Ecal->cd(2);
    snlayer2->Draw();
    rnlayer2->Draw("sames");
+   std::strstream buf2;
+   std::string value2;
+   double pv2 = rnlayer2->Chi2Test(snlayer2,"OU");
+   buf2<<"PV="<<pv2<<std::endl;
+   buf2>>value2;
+   te->DrawTextNDC(0.5,0.7, value2.c_str());
+
  Ecal->cd(3);
    selayer1->Draw();
    relayer1->Draw("sames");
+   std::strstream buf3;
+   std::string value3;
+   double pv3 = relayer1->Chi2Test(selayer1,"OU");
+   buf3<<"PV="<<pv3<<std::endl;
+   buf3>>value3;
+   te->DrawTextNDC(0.5,0.7, value3.c_str());
+
  Ecal->cd(4);
-   selayer1->Draw();
-   relayer1->Draw("sames");
+   selayer2->Draw();
+   relayer2->Draw("sames");
+   std::strstream buf4;
+   std::string value4;
+   double pv4 = relayer2->Chi2Test(selayer2,"OU");
+   buf4<<"PV="<<pv4<<std::endl;
+   buf4>>value4;
+   te->DrawTextNDC(0.5,0.7, value4.c_str());
+
 
  Ecal->Print("Preshower_ZMinus_Hit.eps");
  }
