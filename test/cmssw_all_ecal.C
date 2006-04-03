@@ -3,7 +3,7 @@
 #include "TBranch.h"
 #include "TH2F.h"
 
-void test()
+void cmssw_all_ecal()
 {
 
   gROOT ->Reset();
