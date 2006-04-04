@@ -2,6 +2,7 @@
 #include "TTree.h"
 #include "TBranch.h"
 #include "TH2F.h"
+#include "TH2F.h"
 
 void cmssw_all_ecal()
 {
@@ -129,8 +130,8 @@ for( int i =0 ;i<5; i++){
     std::string value;
     buf<<"PV="<<pv<<std::endl;
     buf>>value;
-
     te->DrawTextNDC(0.2,0.7, value.c_str());
+    std::cout << "[OVAL] " << rhe1[i]->GetName() << " PV = " << pv << std::endl;
   }
 
   Ecal->Print("Barrel_Transverse.eps");
@@ -227,6 +228,7 @@ if (1) {
     buf<<"PV="<<pv<<std::endl;
     buf>>value;
     te->DrawTextNDC(0.2,0.7, value.c_str());
+    std::cout << "[OVAL] " << rhe2[i]->GetName() << " PV = " << pv << std::endl;
   }
 
   Ecal->Print("Barrel_ClusterRatio.eps");
@@ -301,8 +303,8 @@ if (1) {
  buf<<"PV="<<pv<<std::endl;
  buf>>value;
 
- te->DrawTextNDC(0.3,0.3, value.c_str());
-
+ te->DrawTextNDC(0.5,0.5, value.c_str());
+ std::cout << "[OVAL] " << rlongitudinal->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Barrel_Longitudinal.eps");
  }
 
@@ -411,7 +413,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  sbp->Draw();
  rbp->Draw("sames");
  te->DrawTextNDC(0.2,0.7, bvalue.c_str());
-
+ std::cout << "[OVAL] " << rbp->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(2);
  double epv = rep->Chi2Test(sep,"OU");
  std::strstream ebuf;
@@ -422,7 +424,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  sep->Draw();
  rep->Draw("sames");
  te->DrawTextNDC(0.2,0.7, evalue.c_str());
-
+ std::cout << "[OVAL] " << rep->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(3);
 
  double spv = rsp->Chi2Test(ssp,"OU");
@@ -434,7 +436,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  ssp->Draw();
  rsp->Draw("sames");
  te->DrawTextNDC(0.2,0.7, svalue.c_str());
-
+ std::cout << "[OVAL] " << rsp->GetName() << " PV = " << pv << std::endl;
 
  Ecal->cd(4);
  double pv = rsum->Chi2Test(sssum,"OU");
@@ -446,6 +448,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  sssum->Draw();
  rsum->Draw("sames");
  te->DrawTextNDC(0.2,0.7, value.c_str());
+ std::cout << "[OVAL] " << rsum->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Barrel_Epercentage.eps");
 
  }
@@ -512,10 +515,12 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  soccp->SetMarkerColor(2);
  soccp->Draw();
  te->DrawTextNDC(0.2,0.7, value.c_str());
+ 
  Ecal->cd(2);
  roccp->SetMarkerColor(4);
  roccp->Draw();
  te->DrawTextNDC(0.2,0.7, value.c_str());
+ std::cout << "[OVAL] " << roccp->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Barrel_Occupancy.eps");
  }//if
 
@@ -597,6 +602,7 @@ for( int i =0 ;i<5; i++){
     buf>>value;
 
     te->DrawTextNDC(0.2,0.7, value.c_str());
+    std::cout << "[OVAL] " << rhe3[i]->GetName() << " PV = " << pv << std::endl;
   }
 
   Ecal->Print("Endcap_Transverse.eps");
@@ -693,7 +699,7 @@ for( int i =0 ;i<5; i++){
     std::string value;
     buf<<"PV="<<pv<<std::endl;
     buf>>value;
-
+    std::cout << "[OVAL] " << rhe4[i]->GetName() << " PV = " << pv << std::endl;
     te->DrawTextNDC(0.2,0.7, value.c_str());
   }
 
@@ -770,8 +776,8 @@ float rsum2[26];
  buf<<"PV="<<pv<<std::endl;
  buf>>value;
 
- te->DrawTextNDC(0.3,0.3, value.c_str());
-
+ te->DrawTextNDC(0.5,0.5, value.c_str());
+ std::cout << "[OVAL] " << rlongitudinal->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Endcap_Longitudinal.eps");
 
  }
@@ -879,18 +885,18 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  sbp->Draw();
  rbp->Draw("sames");
  te->DrawTextNDC(0.2,0.7, bvalue.c_str());
-
+ std::cout << "[OVAL] " << rbp->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(2);
  double epv = rep->Chi2Test(sep,"OU");
  std::strstream ebuf;
  std::string evalue;
  ebuf<<"PV="<<epv<<std::endl;
  ebuf>>evalue;
-
+ 
  sep->Draw();
  rep->Draw("sames");
  te->DrawTextNDC(0.2,0.7, evalue.c_str());
-
+ std::cout << "[OVAL] " << rep->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(3);
 
  double spv = rsp->Chi2Test(ssp,"OU");
@@ -902,7 +908,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  ssp->Draw();
  rsp->Draw("sames");
  te->DrawTextNDC(0.2,0.7, svalue.c_str());
-
+ std::cout << "[OVAL] " << rsp->GetName() << " PV = " << pv << std::endl;
 
  Ecal->cd(4);
  double pv = rsum->Chi2Test(sssum,"OU");
@@ -914,6 +920,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  sssum->Draw();
  rsum->Draw("sames");
  te->DrawTextNDC(0.2,0.7, value.c_str());
+ std::cout << "[OVAL] " << rsum->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Endcap_Epercentage.eps");
 
  }
@@ -985,6 +992,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  roccp->SetMarkerColor(4);
  roccp->Draw();
  te->DrawTextNDC(0.2,0.7, value.c_str());
+ std::cout << "[OVAL] " << roccp->GetName() << " PV = " << pv << std::endl;
  Ecal->Print("Endcap_Occupancy.eps");
  }//if
 
@@ -1066,6 +1074,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 
  }
  Ecal->cd(1);
+   Ecal_1->SetLogy();
    snlayer1->Draw();
    rnlayer1->Draw("sames");
    std::strstream buf1;
@@ -1074,8 +1083,9 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
    buf1<<"PV="<<pv1<<std::endl;
    buf1>>value1;
    te->DrawTextNDC(0.5,0.7, value1.c_str());
-
+   std::cout << "[OVAL] " << rnlayer1->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(2);
+   Ecal_2->SetLogy();
    snlayer2->Draw();
    rnlayer2->Draw("sames");
    std::strstream buf2;
@@ -1084,8 +1094,9 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
    buf2<<"PV="<<pv2<<std::endl;
    buf2>>value2;
    te->DrawTextNDC(0.5,0.7, value2.c_str());
-
+   std::cout << "[OVAL] " << rnlayer2->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(3);
+   Ecal_3->SetLogy();
    selayer1->Draw();
    relayer1->Draw("sames");
    std::strstream buf3;
@@ -1094,8 +1105,9 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
    buf3<<"PV="<<pv3<<std::endl;
    buf3>>value3;
    te->DrawTextNDC(0.5,0.7, value3.c_str());
-
+   std::cout << "[OVAL] " << relayer1->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(4);
+   Ecal_4->SetLogy();
    selayer2->Draw();
    relayer2->Draw("sames");
    std::strstream buf4;
@@ -1104,8 +1116,8 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
    buf4<<"PV="<<pv4<<std::endl;
    buf4>>value4;
    te->DrawTextNDC(0.5,0.7, value4.c_str());
-
-
+   std::cout << "[OVAL] " << relayer2->GetName() << " PV = " << pv << std::endl;
+ 
 
  Ecal->Print("Preshower_ZPlus_Hit.eps");
  }
@@ -1113,6 +1125,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 if(1) {
  TCanvas * Ecal = new TCanvas("Ecal","Ecal",1000,1000);
  Ecal->Divide(2,2);
+ Ecal->SetLogy();
 
  TH1F*  selayer1 = new TH1F("zminus_sam_1st_energy", "Energy Sepctrum",50, 0, 10);
  TH1F*  selayer2 = new TH1F("zminus_sam_2nd_energy", "Energy Sepctrum",50, 0, 10);;
@@ -1187,6 +1200,7 @@ if(1) {
  }
 
  Ecal->cd(1);
+   Ecal_1->SetLogy();
    snlayer1->Draw();
    rnlayer1->Draw("sames");
    std::strstream buf1;
@@ -1195,8 +1209,9 @@ if(1) {
    buf1<<"PV="<<pv1<<std::endl;
    buf1>>value1;
    te->DrawTextNDC(0.5,0.7, value1.c_str());
-
+   std::cout << "[OVAL] " << rnlayer1->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(2);
+   Ecal_2->SetLogy();
    snlayer2->Draw();
    rnlayer2->Draw("sames");
    std::strstream buf2;
@@ -1205,8 +1220,9 @@ if(1) {
    buf2<<"PV="<<pv2<<std::endl;
    buf2>>value2;
    te->DrawTextNDC(0.5,0.7, value2.c_str());
-
+   std::cout << "[OVAL] " << rnlayer2->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(3);
+   Ecal_3->SetLogy();
    selayer1->Draw();
    relayer1->Draw("sames");
    std::strstream buf3;
@@ -1215,8 +1231,9 @@ if(1) {
    buf3<<"PV="<<pv3<<std::endl;
    buf3>>value3;
    te->DrawTextNDC(0.5,0.7, value3.c_str());
-
+   std::cout << "[OVAL] " << relayer1->GetName() << " PV = " << pv << std::endl;
  Ecal->cd(4);
+   Ecal_4->SetLogy();
    selayer2->Draw();
    relayer2->Draw("sames");
    std::strstream buf4;
@@ -1225,9 +1242,166 @@ if(1) {
    buf4<<"PV="<<pv4<<std::endl;
    buf4>>value4;
    te->DrawTextNDC(0.5,0.7, value4.c_str());
-
+   std::cout << "[OVAL] " << relayer2->GetName() << " PV = " << pv << std::endl;
 
  Ecal->Print("Preshower_ZMinus_Hit.eps");
  }
+//////////////////////////
+if(1) {
+ TCanvas * Ecal = new TCanvas("Ecal","Ecal",1000,1000);
+ Ecal->Divide(2,2);
+ TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 50000., 0., 50000.);
+ TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 50000., 0., 50000.);
+ TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 50000., 0., 50000.);
+ TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,50000., 0., 50000.);
+ sprozp->SetMarkerColor(2);
+ rprozp->SetMarkerColor(4);
+ sprozm->SetMarkerColor(2);
+ rprozm->SetMarkerColor(4);
 
+ for ( int j = 0; j < snev; j++){
+    int nhit1eszm;
+    int nhit2eszm;
+    int nhit1eszp;
+    int nhit2eszp;
+    float totale1eszm=0.;
+    float totale2eszm=0.;
+    float totaleeezm =0.;
+    float totale1eszp=0.;
+    float totale2eszp=0.;
+    float totaleeezp =0.;
+
+    std::vector<float>  ehit1eszm;
+    std::vector<float>  ehit2eszm;
+    std::vector<float>  ehit1eszp;
+    std::vector<float>  ehit2eszp;
+
+    sbranch ->GetEntry(j);
+    nhit1eszm = sEcalInfo.hitsIn1ESzm();
+    ehit1eszm = sEcalInfo.eIn1ESzm();
+    nhit2eszm = sEcalInfo.hitsIn2ESzm();
+    ehit2eszm = sEcalInfo.eIn2ESzm();
+    totaleeezm = sEcalInfo.eInEEzm();
+
+    nhit1eszp = sEcalInfo.hitsIn1ESzp();
+    ehit1eszp = sEcalInfo.eIn1ESzp();
+    nhit2eszp = sEcalInfo.hitsIn2ESzp();
+    ehit2eszp = sEcalInfo.eIn2ESzp();
+    totaleeezp = sEcalInfo.eInEEzp();
+
+
+    double theta = sEcalInfo.momentum().vect().theta();
+    double eta   = -log(tan(theta * 0.5));
+
+  //std::cout<<"Theta="<<theta<<"Eta="<<eta<<std::endl;
+   for (int i = 0; i<nhit1eszm;i++){
+      totale1eszm += ehit1eszm[i];
+   }
+
+   for (int i = 0; i<nhit2eszm;i++){
+      totale2eszm += ehit2eszm[i];
+   }
+   
+   for (int i = 0; i<nhit1eszp;i++){
+      totale1eszp += ehit1eszp[i];
+   }
+
+   for (int i = 0; i<nhit2eszp;i++){
+      totale2eszp += ehit2eszp[i];
+   }
+
+   if ( eta > -2.6 && eta< -1.653 ) sprozm->Fill((totale1eszm+0.7*totale2eszm)/0.00009,totaleeezm);
+   if ( eta > 1.653 && eta < 2.6 )   sprozp->Fill((totale1eszp+0.7*totale2eszp)/0.00009,totaleeezp);
+ }
+
+////
+for ( int j = 0; j < rnev; j++){
+    int nhit1eszm;
+    int nhit2eszm;
+    int nhit1eszp;
+    int nhit2eszp;
+    float totale1eszm=0.;
+    float totale2eszm=0.;
+    float totaleeezm =0.;
+    float totale1eszp=0.;
+    float totale2eszp=0.;
+    float totaleeezp =0.;
+
+    std::vector<float>  ehit1eszm;
+    std::vector<float>  ehit2eszm;
+    std::vector<float>  ehit1eszp;
+    std::vector<float>  ehit2eszp;
+
+    rbranch ->GetEntry(j);
+    nhit1eszm = rEcalInfo.hitsIn1ESzm();
+    ehit1eszm = rEcalInfo.eIn1ESzm();
+    nhit2eszm = rEcalInfo.hitsIn2ESzm();
+    ehit2eszm = rEcalInfo.eIn2ESzm();
+    totaleeezm = rEcalInfo.eInEEzm();
+
+    nhit1eszp = rEcalInfo.hitsIn1ESzp();
+    ehit1eszp = rEcalInfo.eIn1ESzp();
+    nhit2eszp = rEcalInfo.hitsIn2ESzp();
+    ehit2eszp = rEcalInfo.eIn2ESzp();
+    totaleeezp = rEcalInfo.eInEEzp();
+
+
+    double theta = rEcalInfo.momentum().vect().theta();
+    double eta   = -log(tan(theta * 0.5));
+
+  //std::cout<<"Theta="<<theta<<"Eta="<<eta<<std::endl;
+   for (int i = 0; i<nhit1eszm;i++){
+      totale1eszm += ehit1eszm[i];
+   }
+
+   for (int i = 0; i<nhit2eszm;i++){
+      totale2eszm += ehit2eszm[i];
+   }
+
+   for (int i = 0; i<nhit1eszp;i++){
+      totale1eszp += ehit1eszp[i];
+   }
+
+   for (int i = 0; i<nhit2eszp;i++){
+      totale2eszp += ehit2eszp[i];
+   }
+
+   if ( eta > -2.6 && eta< -1.653 ) rprozm->Fill((totale1eszm+0.7*totale2eszm)/0.00009,totaleeezm);
+   if ( eta > 1.653 && eta < 2.6 )   rprozp->Fill((totale1eszp+0.7*totale2eszp)/0.00009,totaleeezp);
+}
+/*
+   std::strstream buf1;
+   std::string value1;
+   double pv1 = rprozm->Chi2Test(sprozm,"OU");
+   buf1<<"PV="<<pv1<<std::endl;
+   buf1>>value1;
+
+   std::strstream buf2;
+   std::string value2;
+   double pv2 = rprozp->Chi2Test(sprozp,"OU");
+   buf2<<"PV="<<pv2<<std::endl;
+   buf2>>value2;
+*/
+   //std::cout << "[OVAL] " << rprozm->GetName() << " PV = " << pv1 << std::endl;
+   //std::cout << "[OVAL] " << rprozp->GetName() << " PV = " << pv2 << std::endl;
+
+ Ecal->cd(1);
+   //sprozm->Fit("pol1");
+   sprozm->Draw();
+   //te->DrawTextNDC(0.5,0.7, value1.c_str());
+ Ecal->cd(2);
+   //sprozp->Fit("pol1");
+   sprozp->Draw();
+   //te->DrawTextNDC(0.5,0.7, value2.c_str());
+ Ecal->cd(3);
+   //rprozm->Fit("pol1");
+   rprozm->Draw();
+   //te->DrawTextNDC(0.5,0.7, value1.c_str());
+ Ecal->cd(4);
+   //rprozp->Fit("pol1");
+   rprozp->Draw();
+   //te->DrawTextNDC(0.5,0.7, value2.c_str());
+ Ecal->Print("Preshower_ESvsEE.eps"); 
+}
+////////////////end
 }
