@@ -376,7 +376,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 
  for ( int j = 0; j < snev; j++){
    sbranch ->GetEntry(j);
-   spe = 30000;
+   spe = sEcalInfo.momentum().e();
    see = sEcalInfo.eInEE();
    sbe = sEcalInfo.eInEB();
    sse = sEcalInfo.eInES();
@@ -389,7 +389,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 
  for ( int j = 0; j < rnev; j++){
    rbranch ->GetEntry(j);
-   rpe = 30000;
+   rpe = rEcalInfo.momentum().e();
    ree = rEcalInfo.eInEE();
    rbe = rEcalInfo.eInEB();
    rse = rEcalInfo.eInES();
@@ -844,7 +844,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 
  for ( int j = 0; j < snev; j++){
    sbranch ->GetEntry(j);
-   spe =3000; // sEcalInfo.momentum().ee() ;
+   spe = sEcalInfo.momentum().e() ;
    see = sEcalInfo.eInEE();
    sbe = sEcalInfo.eInEB();
    sse = sEcalInfo.eInES();
@@ -857,7 +857,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
 
  for ( int j = 0; j < rnev; j++){
    rbranch ->GetEntry(j);
-   rpe = 30000;
+   rpe = rEcalInfo.momentum().e();
    ree = rEcalInfo.eInEE();
    rbe = rEcalInfo.eInEB();
    rse = rEcalInfo.eInES();
