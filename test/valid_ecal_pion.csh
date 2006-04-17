@@ -10,7 +10,7 @@ echo "===========> Validating Ecal Simhits with 30 GeV Photon ......."
 cp  ${ECALDATADIR}/Pion_Pt60GeV_all.root  testinput.root
 
 cmsRun valid_ecal_simhit.cfg
-root -b -p -q  EcalSimHitPlots.C
+root -b -p -q  EcalSimHitPlotsForPion.C
 mv  simhitoutput.root   PionSimHit_Pt60GeV_all.root
 if ( -e testinput.root ) /bin/rm testinput.root
 
