@@ -8,13 +8,6 @@ void EcalSimHitPlots()
 {
 
   gROOT ->Reset();
-/*
-  gStyle->SetStatH(0.30);
-  gStyle->SetStatW(0.40);
-  gStyle->SetTitleH(0.15);
-  gStyle->SetTitleW(0.4);
-  gStyle->SetLabelSize(0.06);
-*/
  char* sfilename ="$SAMPLEFILE";
  char* rfilename ="$REFERFILE"; 
  char * treename="Events";        //The Title of Tree.
@@ -50,22 +43,13 @@ void EcalSimHitPlots()
 //Check the Energy of Particle
    sbranch ->GetEntry(1);
    float sampleE = sEcalInfo.momentum().e();
-   int sPid = sEcalInfo.pId();
    rbranch ->GetEntry(1);
    float referE = rEcalInfo.momentum().e();
-   int rPid = rEcalInfo.pId();
    if ( sampleE != referE ) {
        std::cout<<"Warning:: The Sample and reference sample use different Energy of incident Particle!!"<<std::endl;
        return;
     }
     
-   if ( sPid != rPid ){
-       std::cout<<"Warning:: The Sample and reference sample use different incident Particle!!"<<std::endl;
-       return;
-
-   }
-
-
 
 ////////////////////////////////////////////////////////////////
 //                                                            //
@@ -84,7 +68,6 @@ if (1) {
  TH1F*  she1[5];
  TH1F*  rhe1[5];
 
-if (sPid == 22 ) {
  if ( sampleE < 35000) {
    she1[0] = new TH1F("barrel_sample_e1","E1x1",50, 0.8e+4, 3.5e+4);
    she1[1] = new TH1F("barrel_sample_e4","E2x2",50, 0.8e+4, 3.5e+4);
@@ -126,25 +109,6 @@ if (sPid == 22 ) {
    rhe1[3] = new TH1F("barrel_ref_e16","E4x4",50, 3.0e+5, 4.1e+5);
    rhe1[4] = new TH1F("barrel_ref_e25","E5x5",50, 3.0e+5, 4.1e+5);
  }
-} else {
-
-   she1[0] = new TH1F("barrel_sample_e1","E1x1",50, 0.8e+4, 3.5e+4);
-   she1[1] = new TH1F("barrel_sample_e4","E2x2",50, 0.8e+4, 3.5e+4);
-   she1[2] = new TH1F("barrel_sample_e9","E3x3",50, 0.8e+4, 3.5e+4);
-   she1[3] = new TH1F("barrel_sample_e16","E4x4",50, 0.8e+4, 3.5e+4);
-   she1[4] = new TH1F("barrel_sample_e25","E5x5",50, 0.8e+4, 3.5e+4);
-
-   rhe1[0] = new TH1F("barrel_ref_e1","E1x1",50, 0.8e+4, 3.5e+4);
-   rhe1[1] = new TH1F("barrel_ref_e4","E2x2",50, 0.8e+4, 3.5e+4);
-   rhe1[2] = new TH1F("barrel_ref_e9","E3x3",50, 0.8e+4, 3.5e+4);
-   rhe1[3] = new TH1F("barrel_ref_e16","E4x4",50, 0.8e+4, 3.5e+4);
-   rhe1[4] = new TH1F("barrel_ref_e25","E5x5",50, 0.8e+4, 3.5e+4);
-
-
-}
-
-
-
 
  for ( int n=0; n<5; n++){
         she1[n]->GetXaxis()->SetTitle("MeV");
@@ -202,16 +166,9 @@ for( int i =0 ;i<5; i++){
     std::cout << "[OVAL] " << rhe1[i]->GetName() << " PV = " << pv << std::endl;
   }
 
-if (sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVBarrel_Transverse.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVBarrel_Transverse.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVBarrel_Transverse.eps");
-
-} else {
-  Ecal->Print("PionBarrel_Transverse.eps");
-}
-
-
 }
 
 
@@ -308,14 +265,10 @@ if (1) {
     std::cout << "[OVAL] " << rhe2[i]->GetName() << " PV = " << pv << std::endl;
   }
 
-if( sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVBarrel_ClusterRatio.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVBarrel_ClusterRatio.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVBarrel_ClusterRatio.eps");
-}else {
-  Ecal->Print("PionBarrel_ClusterRatio.eps");
-}
- } 
+} 
 
 // Barrel's  Longitudinal Profile of Showers
 
@@ -323,7 +276,6 @@ if( sPid == 22 ) {
 
  TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,600);
  
-if( sPid == 22 ) {
  if ( sampleE< 35000){
     TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
  }else if(sampleE< 250000) {
@@ -331,10 +283,6 @@ if( sPid == 22 ) {
  }else if(sampleE< 450000) {
     TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 25000);
  }
-}else {
-
-TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
-}
 
  slongitudinal->SetMarkerColor(2);
  slongitudinal->SetMarkerStyle(26);
@@ -358,7 +306,6 @@ TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,
    }
  }
 
-if (sPid == 22 ) {
  if ( sampleE< 35000){
     TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
  }else if(sampleE< 250000) {
@@ -366,9 +313,6 @@ if (sPid == 22 ) {
  }else if(sampleE< 450000) {
     TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 25000);
  }
-} else {
-TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
-}
 
  rlongitudinal->SetMarkerColor(4);
  rlongitudinal->SetMarkerStyle(30);
@@ -410,13 +354,9 @@ TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,2
  te->DrawTextNDC(0.5,0.5, value.c_str());
  std::cout << "[OVAL] " << rlongitudinal->GetName() << " PV = " << pv << std::endl;
 
-if (sPid ==  22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVBarrel_Longitudinal.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVBarrel_Longitudinal.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVBarrel_Longitudinal.eps");
-} else {
-  Ecal->Print("PionBarrel_Longitudinal.eps");
-}
 }
 
 
@@ -565,13 +505,9 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  te->DrawTextNDC(0.2,0.7, value.c_str());
  std::cout << "[OVAL] " << rsum->GetName() << " PV = " << pv << std::endl;
 
-if (sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVBarrel_Epercentage.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVBarrel_Epercentage.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVBarrel_Epercentage.eps");
-} else {
-Ecal->Print("PionBarrel_Epercentage.eps");
-}
 
  }
 
@@ -645,13 +581,9 @@ Ecal->Print("PionBarrel_Epercentage.eps");
  te->DrawTextNDC(0.2,0.7, value.c_str());
  std::cout << "[OVAL] " << roccp->GetName() << " PV = " << pv << std::endl;
 
-if(sPid ==22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVBarrel_Occupancy.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVBarrel_Occupancy.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVBarrel_Occupancy.eps");
-} else {
- Ecal->Print("PionBarrel_Occupancy.eps");
-}
 }//if
 
 //Endcap's  Transverse Profile of showers
@@ -665,7 +597,6 @@ if (1) {
  TH1F*  she3[5];
  TH1F*  rhe3[5];
 
-if( sPid == 22 ) {
  if ( sampleE < 35000) {
    she3[0] = new TH1F("endcap_sample_e1","E1x1",50, 0.8e+4, 3.5e+4);
    she3[1] = new TH1F("endcap_sample_e4","E2x2",50, 0.8e+4, 3.5e+4);
@@ -707,21 +638,6 @@ if( sPid == 22 ) {
    rhe3[3] = new TH1F("endcap_ref_e16","E4x4",50, 3.0e+5, 4.1e+5);
    rhe3[4] = new TH1F("endcap_ref_e25","E5x5",50, 3.0e+5, 4.1e+5);
  }
-
-} else {
-   she3[0] = new TH1F("endcap_sample_e1","E1x1",50, 0.8e+4, 3.5e+4);
-   she3[1] = new TH1F("endcap_sample_e4","E2x2",50, 0.8e+4, 3.5e+4);
-   she3[2] = new TH1F("endcap_sample_e9","E3x3",50, 0.8e+4, 3.5e+4);
-   she3[3] = new TH1F("endcap_sample_e16","E4x4",50, 0.8e+4, 3.5e+4);
-   she3[4] = new TH1F("endcap_sample_e25","E5x5",50, 0.8e+4, 3.5e+4);
-
-   rhe3[0] = new TH1F("endcap_ref_e1","E1x1",50, 0.8e+4, 3.5e+4);
-   rhe3[1] = new TH1F("endcap_ref_e4","E2x2",50, 0.8e+4, 3.5e+4);
-   rhe3[2] = new TH1F("endcap_ref_e9","E3x3",50, 0.8e+4, 3.5e+4);
-   rhe3[3] = new TH1F("endcap_ref_e16","E4x4",50, 0.8e+4, 3.5e+4);
-   rhe3[4] = new TH1F("endcap_ref_e25","E5x5",50, 0.8e+4, 3.5e+4);
- 
-}
 
  for ( int n=0; n<5; n++){
         she3[n]->GetXaxis()->SetTitle("MeV");
@@ -780,13 +696,9 @@ for( int i =0 ;i<5; i++){
     std::cout << "[OVAL] " << rhe3[i]->GetName() << " PV = " << pv << std::endl;
   }
 
-if( sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVEndcap_Transverse.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVEndcap_Transverse.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVEndcap_Transverse.eps");
-} else {
- Ecal->Print("PionEndcap_Transverse.eps");
-}
  }
 
  //Endcap's Ratios of the Energy Depostion in different Clusters
@@ -884,15 +796,10 @@ if( sPid == 22 ) {
     te->DrawTextNDC(0.2,0.7, value.c_str());
   }
 
-if(sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVEndcap_ClusterRatio.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVEndcap_ClusterRatio.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVEndcap_ClusterRatio.eps");
-}else {
-  Ecal->Print("PionEndcap_ClusterRatio.eps");
-}
-
- } 
+} 
 
 // Endcap's  Longitudinal Profile of Showers
 
@@ -900,7 +807,6 @@ if(sPid == 22 ) {
 
   TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,600);
 
-if (sPid == 22 ) {
  if (sampleE< 35000){
     TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
  }else if ( sampleE<250000){
@@ -908,12 +814,6 @@ if (sPid == 22 ) {
  }else if ( sampleE<450000){
    TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 12000);
  } 
-} else {
- 
-  TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
-
-} 
-
  
  slongitudinal->SetMarkerColor(2);
  slongitudinal->SetMarkerStyle(26);
@@ -938,7 +838,6 @@ if (sPid == 22 ) {
 
  }
 
-if(sPid == 22 ) {
  if (sampleE< 35000){
    TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
  }else if ( sampleE<250000){
@@ -946,9 +845,6 @@ if(sPid == 22 ) {
  }else if ( sampleE<450000){
    TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 12000);
  }
-}else {
-  TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
-}
 
  rlongitudinal->SetMarkerColor(4);
  rlongitudinal->SetMarkerStyle(30);
@@ -991,13 +887,9 @@ float rsum2[26];
  te->DrawTextNDC(0.5,0.5, value.c_str());
  std::cout << "[OVAL] " << rlongitudinal->GetName() << " PV = " << pv << std::endl;
 
-if (sPid ==22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVEndcap_Longitudinal.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVEndcap_Longitudinal.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVEndcap_Longitudinal.eps");
-}else {
-   Ecal->Print("PionEndcap_Longitudinal.eps");
-}
  }
 // Endcap's fraction of the Energy Depositon 
 
@@ -1144,15 +1036,11 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  te->DrawTextNDC(0.2,0.7, value.c_str());
  std::cout << "[OVAL] " << rsum->GetName() << " PV = " << pv << std::endl;
 
-if ( sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVEndcap_Epercentage.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVEndcap_Epercentage.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVEndcap_Epercentage.eps");
-}else {
-  Ecal->Print("PionEndcap_Epercentage.eps");
-}
 
- }
+}
 
 
 //Endcap's Occupancy of the CaloG4Hits ( Phi vs. Eta)
@@ -1223,16 +1111,11 @@ if ( sPid == 22 ) {
  te->DrawTextNDC(0.2,0.7, value.c_str());
  std::cout << "[OVAL] " << roccp->GetName() << " PV = " << pv << std::endl;
 
-if (sPid == 22 ) {
-
   if( sampleE<35000 )         Ecal->Print("30GeVEndcap_Occupancy.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVEndcap_Occupancy.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVEndcap_Occupancy.eps");
-}else {
-  Ecal->Print("PionEndcap_Occupancy.eps");
-}
 
- }//if
+}//if
 
 // Preshower's hit multiplicity and energy spectrum
 
@@ -1356,15 +1239,11 @@ if (sPid == 22 ) {
    te->DrawTextNDC(0.5,0.7, value4.c_str());
    std::cout << "[OVAL] " << relayer2->GetName() << " PV = " << pv << std::endl;
  
-if( sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVPreshower_ZPlus_Hit.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVPreshower_ZPlus_Hit.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVPreshower_ZPlus_Hit.eps");
-} else {
-  Ecal->Print("PionPreshower_ZPlus_Hit.eps");
-}
 
- }
+}
 //////////////////////////////////
 if(1) {
  TCanvas * Ecal = new TCanvas("Ecal","Ecal",1000,1000);
@@ -1487,13 +1366,9 @@ if(1) {
    buf4>>value4;
    te->DrawTextNDC(0.5,0.7, value4.c_str());
    std::cout << "[OVAL] " << relayer2->GetName() << " PV = " << pv << std::endl;
-if(sPid == 22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVPreshower_ZMinus_Hit.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVPreshower_ZMinus_Hit.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVPreshower_ZMinus_Hit.eps");
-}else {
-  Ecal->Print("PionPreshower_ZMinus_Hit.eps");
-} 
 
  }
 //////////////////////////
@@ -1501,7 +1376,6 @@ if(1) {
  TCanvas * Ecal = new TCanvas("Ecal","Ecal",1000,1000);
  Ecal->Divide(2,2);
 
-if( sPid == 22 ) {
  if (sampleE< 35000){
     TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 50000., 0., 50000.);
     TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 50000., 0., 50000.);
@@ -1522,12 +1396,6 @@ if( sPid == 22 ) {
     TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,500000., 0., 5000000.);
 
  }
-}else {
-    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 50000., 0., 50000.);
-    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,50000., 0., 50000.);
-}
  
  sprozp->SetMarkerColor(2);
  rprozp->SetMarkerColor(4);
@@ -1676,13 +1544,9 @@ for ( int j = 0; j < rnev; j++){
    //rprozp->Fit("pol1");
    rprozp->Draw();
    //te->DrawTextNDC(0.5,0.7, value2.c_str());
-if (sPid ==22 ) {
   if( sampleE<35000 )         Ecal->Print("30GeVPreshower_ESvsEE.eps");
   else if ( sampleE<250000 )  Ecal->Print("200GeVPreshower_ESvsEE.eps");
   else if ( sampleE<450000 )  Ecal->Print("400GeVPreshower_ESvsEE.eps");
-} else {
-   Ecal->Print("PionPreshower_ESvsEE.eps");
-}
 
 }
 ////////////////end
