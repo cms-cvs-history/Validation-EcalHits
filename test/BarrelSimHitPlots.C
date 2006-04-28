@@ -28,7 +28,7 @@ void BarrelSimHitPlots()
 
  TBranch * sbranch = sevents->GetBranch( "PEcalValidInfo_SimG4Object_EcalValidInfo.obj");
  assert(sbranch != 0);
- TBranch * rbranch = revents->GetBranch( "PEcalValidInfo_SimG4object_EcalValidInfo.obj");
+ TBranch * rbranch = revents->GetBranch( "PEcalValidInfo_SimG4Object_EcalValidInfo.obj");
  assert(rbranch != 0);
 
  int snev = sevents->GetEntries();
