@@ -9,7 +9,7 @@ cp  ${ECALDATADIR}/Photon_E30GeV_barrel.root   testinput.root
 
 cmsRun valid_ecal_simhit.cfg
 setenv SAMPLEFILE  simhitoutput.root
-setenv REFERFILE   ${PWD}/old/PhotonSimHit_E30GeV_0.2.root
+setenv REFERFILE   simhitoutput.root #${PWD}/old/PhotonSimHit_E30GeV_0.2.root
 root -b -p -q  BarrelSimHitPlots.C
 mv  simhitoutput.root   PhotonSimHit_E30GeV_0.2.root
 if ( -e testinput.root ) /bin/rm testinput.root
