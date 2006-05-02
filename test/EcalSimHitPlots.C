@@ -1377,23 +1377,23 @@ if(1) {
  Ecal->Divide(2,2);
 
  if (sampleE< 35000){
-    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 50000., 0., 50000.);
-    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,50000., 0., 50000.);
+    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 300., 0., 35000.);
+    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 300., 0., 35000.);
+    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 300., 0., 35000.);
+    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,300., 0., 35000.);
  } else if ( sampleE< 250000){
-    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 50000., 0., 50000.);
-    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 50000., 0., 50000.);
-    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,50000., 0., 50000.);
+    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 1000., 0., 250000.);
+    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 1000., 0., 250000.);
+    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 1000., 0., 250000.);
+    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0, 1000., 0., 250000.);
 
 
  } else if ( sampleE< 450000){
  
-    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 500000., 0., 5000000.);
-    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 500000., 0., 5000000.);
-    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 500000., 0., 5000000.);
-    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0.,500000., 0., 5000000.);
+    TProfile*  sprozp = new TProfile("eevses_szp","Preshower EE vs ES energy z+(sample)"   ,100, 0, 3000., 0., 500000.);
+    TProfile*  sprozm = new TProfile("eevses_szm","Preshower EE vs ES energy z-(sample)"   ,100, 0, 3000., 0., 500000.);
+    TProfile*  rprozp = new TProfile("eevses_rzp","Preshower EE vs ES energy z+(reference)",100, 0, 3000., 0., 500000.);
+    TProfile*  rprozm = new TProfile("eevses_rzm","Preshower EE vs ES energy z-(reference)",100, 0, 3000., 0., 500000.);
 
  }
  
@@ -1453,8 +1453,8 @@ if(1) {
       totale2eszp += ehit2eszp[i];
    }
 
-   if ( eta > -2.6 && eta< -1.653 ) sprozm->Fill((totale1eszm+0.7*totale2eszm)/0.00009,totaleeezm);
-   if ( eta > 1.653 && eta < 2.6 )   sprozp->Fill((totale1eszp+0.7*totale2eszp)/0.00009,totaleeezp);
+   if ( eta > -2.6 && eta< -1.653 )  sprozm->Fill((totale1eszm+0.7*totale2eszm)/0.09,totaleeezm);
+   if ( eta > 1.653 && eta < 2.6 )   sprozp->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
  }
 
 ////
@@ -1509,8 +1509,8 @@ for ( int j = 0; j < rnev; j++){
       totale2eszp += ehit2eszp[i];
    }
 
-   if ( eta > -2.6 && eta< -1.653 ) rprozm->Fill((totale1eszm+0.7*totale2eszm)/0.00009,totaleeezm);
-   if ( eta > 1.653 && eta < 2.6 )   rprozp->Fill((totale1eszp+0.7*totale2eszp)/0.00009,totaleeezp);
+   if ( eta > -2.6 && eta< -1.653 ) rprozm->Fill((totale1eszm+0.7*totale2eszm)/0.09,totaleeezm);
+   if ( eta > 1.653 && eta < 2.6 )   rprozp->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
 }
 /*
    std::strstream buf1;
@@ -1529,19 +1529,19 @@ for ( int j = 0; j < rnev; j++){
    //std::cout << "[OVAL] " << rprozp->GetName() << " PV = " << pv2 << std::endl;
 
  Ecal->cd(1);
-   //sprozm->Fit("pol1");
+   sprozm->Fit("pol1");
    sprozm->Draw();
    //te->DrawTextNDC(0.5,0.7, value1.c_str());
  Ecal->cd(2);
-   //sprozp->Fit("pol1");
+   sprozp->Fit("pol1");
    sprozp->Draw();
    //te->DrawTextNDC(0.5,0.7, value2.c_str());
  Ecal->cd(3);
-   //rprozm->Fit("pol1");
+   rprozm->Fit("pol1");
    rprozm->Draw();
    //te->DrawTextNDC(0.5,0.7, value1.c_str());
  Ecal->cd(4);
-   //rprozp->Fit("pol1");
+   rprozp->Fit("pol1");
    rprozp->Draw();
    //te->DrawTextNDC(0.5,0.7, value2.c_str());
   if( sampleE<35000 )         Ecal->Print("30GeVPreshower_ESvsEE.eps");
