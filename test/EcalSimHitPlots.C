@@ -812,7 +812,7 @@ for( int i =0 ;i<5; i++){
  }else if ( sampleE<250000){
    TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 10000);
  }else if ( sampleE<450000){
-   TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 12000);
+   TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 20000);
  } 
  
  slongitudinal->SetMarkerColor(2);
@@ -843,7 +843,7 @@ for( int i =0 ;i<5; i++){
  }else if ( sampleE<250000){
    TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 10000);
  }else if ( sampleE<450000){
-   TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 12000);
+   TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 20000);
  }
 
  rlongitudinal->SetMarkerColor(4);

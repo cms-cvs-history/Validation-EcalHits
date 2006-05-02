@@ -59,17 +59,17 @@ if (1) {
  TH1F*  she1[5];
  TH1F*  rhe1[5];
 
-   she1[0] = new TH1F("barrel_sample_e1","E1x1",50, 5., 3.5e+2);
-   she1[1] = new TH1F("barrel_sample_e4","E2x2",50, 5., 3.5e+2);
-   she1[2] = new TH1F("barrel_sample_e9","E3x3",50, 5., 3.5e+2);
-   she1[3] = new TH1F("barrel_sample_e16","E4x4",50, 5., 3.5e+2);
-   she1[4] = new TH1F("barrel_sample_e25","E5x5",50, 5., 3.5e+2);
+   she1[0] = new TH1F("barrel_sample_e1","E1x1",50, 5., 5.5e+2);
+   she1[1] = new TH1F("barrel_sample_e4","E2x2",50, 5., 5.5e+2);
+   she1[2] = new TH1F("barrel_sample_e9","E3x3",50, 5., 5.5e+2);
+   she1[3] = new TH1F("barrel_sample_e16","E4x4",50, 5., 5.5e+2);
+   she1[4] = new TH1F("barrel_sample_e25","E5x5",50, 5., 5.5e+2);
 
-   rhe1[0] = new TH1F("barrel_ref_e1","E1x1",50, 5., 3.5e+2);
-   rhe1[1] = new TH1F("barrel_ref_e4","E2x2",50, 5., 3.5e+2);
-   rhe1[2] = new TH1F("barrel_ref_e9","E3x3",50, 5., 3.5e+2);
-   rhe1[3] = new TH1F("barrel_ref_e16","E4x4",50, 5., 3.5e+2);
-   rhe1[4] = new TH1F("barrel_ref_e25","E5x5",50, 5., 3.5e+2);
+   rhe1[0] = new TH1F("barrel_ref_e1","E1x1",50, 5., 5.5e+2);
+   rhe1[1] = new TH1F("barrel_ref_e4","E2x2",50, 5., 5.5e+2);
+   rhe1[2] = new TH1F("barrel_ref_e9","E3x3",50, 5., 5.5e+2);
+   rhe1[3] = new TH1F("barrel_ref_e16","E4x4",50, 5., 5.5e+2);
+   rhe1[4] = new TH1F("barrel_ref_e25","E5x5",50, 5., 5.5e+2);
 
 
 
@@ -239,7 +239,7 @@ if (1) {
  TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,600);
  
 
-TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 30);
+TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 1000);
 
  slongitudinal->SetMarkerColor(2);
  slongitudinal->SetMarkerStyle(26);
@@ -263,7 +263,7 @@ TH2F * slongitudinal = new TH2F("barrel_sample_longi","Longitudinal Profile",26,
    }
  }
 
-TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 30);
+TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 1000);
 
  rlongitudinal->SetMarkerColor(4);
  rlongitudinal->SetMarkerStyle(30);
@@ -316,7 +316,7 @@ TH2F * rlongitudinal = new TH2F("barrel_ref_longi","Longitudinal Profile",26,0,2
 TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  Ecal->Divide(2,2);
 
- TH1F * sbp = new TH1F("barrel_sample_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * sbp = new TH1F("barrel_sample_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.0 , 1.0);
  sbp->GetXaxis()->SetTitle("Ratio");
  sbp->GetXaxis()->CenterTitle(true);
  sbp->GetYaxis()->SetTitle("Counts");
@@ -338,14 +338,14 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  ssp->GetYaxis()->CenterTitle(true);
  ssp->SetLineColor(2);
 
- TH1F * sssum = new TH1F("barrel_sample_etoal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * sssum = new TH1F("barrel_sample_etoal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.0 , 1.0);
  sssum->GetXaxis()->SetTitle("Ratio");
  sssum->GetXaxis()->CenterTitle(true);
  sssum->GetYaxis()->SetTitle("Counts");
  sssum->GetYaxis()->CenterTitle(true);
  sssum->SetLineColor(2);
 
- TH1F * rbp = new TH1F("barrel_ref_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.8 , 1.);
+ TH1F * rbp = new TH1F("barrel_ref_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.0 , 1.);
  rbp->GetXaxis()->SetTitle("Ratio");
  rbp->GetXaxis()->CenterTitle(true);
  rbp->GetYaxis()->SetTitle("Counts");
@@ -369,7 +369,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  rsp->SetLineColor(4);
  rsp->SetLineStyle(2);
 
- TH1F * rsum = new TH1F("barrel_ref_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * rsum = new TH1F("barrel_ref_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.0 , 1.0);
  rsum->GetXaxis()->SetTitle("Ratio");
  rsum->GetXaxis()->CenterTitle(true);
  rsum->GetYaxis()->SetTitle("Counts");
@@ -542,17 +542,17 @@ if (1) {
  TH1F*  she3[5];
  TH1F*  rhe3[5];
 
-   she3[0] = new TH1F("endcap_sample_e1","E1x1",50, 5., 5.5e+5);
-   she3[1] = new TH1F("endcap_sample_e4","E2x2",50, 5., 5.5e+5);
-   she3[2] = new TH1F("endcap_sample_e9","E3x3",50, 5., 5.5e+5);
-   she3[3] = new TH1F("endcap_sample_e16","E4x4",50, 5., 5.5e+5);
-   she3[4] = new TH1F("endcap_sample_e25","E5x5",50, 5., 5.5e+5);
+   she3[0] = new TH1F("endcap_sample_e1","E1x1",50, 5., 4.0e+5);
+   she3[1] = new TH1F("endcap_sample_e4","E2x2",50, 5., 4.0e+5);
+   she3[2] = new TH1F("endcap_sample_e9","E3x3",50, 5., 4.0e+5);
+   she3[3] = new TH1F("endcap_sample_e16","E4x4",50, 5., 4.0e+5);
+   she3[4] = new TH1F("endcap_sample_e25","E5x5",50, 5., 4.0e+5);
 
-   rhe3[0] = new TH1F("endcap_ref_e1","E1x1",50, 5., 5.5e+5);
-   rhe3[1] = new TH1F("endcap_ref_e4","E2x2",50, 5., 5.5e+5);
-   rhe3[2] = new TH1F("endcap_ref_e9","E3x3",50, 5., 5.5e+5);
-   rhe3[3] = new TH1F("endcap_ref_e16","E4x4",50, 5., 5.5e+5);
-   rhe3[4] = new TH1F("endcap_ref_e25","E5x5",50, 5., 5.5e+5);
+   rhe3[0] = new TH1F("endcap_ref_e1","E1x1",50, 5., 4.0e+5);
+   rhe3[1] = new TH1F("endcap_ref_e4","E2x2",50, 5., 4.0e+5);
+   rhe3[2] = new TH1F("endcap_ref_e9","E3x3",50, 5., 4.0e+5);
+   rhe3[3] = new TH1F("endcap_ref_e16","E4x4",50, 5., 4.0e+5);
+   rhe3[4] = new TH1F("endcap_ref_e25","E5x5",50, 5., 4.0e+5);
  
 
  for ( int n=0; n<5; n++){
@@ -719,7 +719,7 @@ for( int i =0 ;i<5; i++){
 
   TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,600);
 
-  TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 8000);
+  TH2F * slongitudinal = new TH2F("endcap_sample_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
  
  slongitudinal->SetMarkerColor(2);
  slongitudinal->SetMarkerStyle(26);
@@ -744,7 +744,7 @@ for( int i =0 ;i<5; i++){
 
  }
 
-  TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 8000);
+  TH2F * rlongitudinal = new TH2F("endcap_ref_longi","Longitudinal Profile",26,0,26, 100, 0, 3000);
 
  rlongitudinal->SetMarkerColor(4);
  rlongitudinal->SetMarkerStyle(30);
@@ -796,7 +796,7 @@ float rsum2[26];
 TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  Ecal->Divide(2,2);
 
- TH1F * sbp = new TH1F("endcap_sample_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * sbp = new TH1F("endcap_sample_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0. , 1.0);
  sbp->GetXaxis()->SetTitle("Ratio");
  sbp->GetXaxis()->CenterTitle(true);
  sbp->GetYaxis()->SetTitle("Counts");
@@ -818,14 +818,14 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  ssp->GetYaxis()->CenterTitle(true);
  ssp->SetLineColor(2);
 
- TH1F * sssum = new TH1F("endcap_smaple_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * sssum = new TH1F("endcap_smaple_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0. , 1.0);
  sssum->GetXaxis()->SetTitle("Ratio");
  sssum->GetXaxis()->CenterTitle(true);
  sssum->GetYaxis()->SetTitle("Counts");
  sssum->GetYaxis()->CenterTitle(true);
  sssum->SetLineColor(2);
 
- TH1F * rbp = new TH1F("endcap_ref_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0.8 , 1.);
+ TH1F * rbp = new TH1F("endcap_ref_eb/ep","#frac{E_{Barrel}}{E_{Inci}}", 50 , 0. , 1.);
  rbp->GetXaxis()->SetTitle("Ratio");
  rbp->GetXaxis()->CenterTitle(true);
  rbp->GetYaxis()->SetTitle("Counts");
@@ -849,7 +849,7 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  rsp->SetLineColor(4);
  rsp->SetLineStyle(2);
 
- TH1F * rsum = new TH1F("endcap_ref_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0.8 , 1.0);
+ TH1F * rsum = new TH1F("endcap_ref_etotal/ep","#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 50 , 0. , 1.0);
  rsum->GetXaxis()->SetTitle("Ratio");
  rsum->GetXaxis()->CenterTitle(true);
  rsum->GetYaxis()->SetTitle("Counts");
@@ -1027,10 +1027,10 @@ TCanvas * Ecal = new TCanvas("Ecal","Ecal",800,1000);
  relayer2->SetLineColor(4);
  relayer2->SetLineStyle(2);
 
- TH1I*  snlayer1 = new TH1I("zplus_sam_1st_nhit", "Multiplicity",50, 0, 30);
- TH1I*  snlayer2 = new TH1I("zplus_sam_2nd_nhit", "Multiplicity",50, 0, 30);
- TH1I*  rnlayer1 = new TH1I("zplus_ref_1st_nhit", "Multiplicity",50, 0, 30);
- TH1I*  rnlayer2 = new TH1I("zplus_ref_2nd_nhit", "Multiplicity",50, 0, 30);
+ TH1I*  snlayer1 = new TH1I("zplus_sam_1st_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  snlayer2 = new TH1I("zplus_sam_2nd_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  rnlayer1 = new TH1I("zplus_ref_1st_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  rnlayer2 = new TH1I("zplus_ref_2nd_nhit", "Multiplicity",50, 0, 40);
  snlayer1->SetLineColor(2);
  snlayer2->SetLineColor(2);
  rnlayer1->SetLineColor(4);
@@ -1152,10 +1152,10 @@ if(1) {
  relayer2->SetLineColor(4);
  relayer2->SetLineStyle(2);
 
- TH1I*  snlayer1 = new TH1I("zminus_sam_1st_nhit", "Multiplicity",50, 0, 30);
- TH1I*  snlayer2 = new TH1I("zminus_sam_2nd_nhit", "Multiplicity",50, 0, 30);
- TH1I*  rnlayer1 = new TH1I("zminus_ref_1st_nhit", "Multiplicity",50, 0, 30);
- TH1I*  rnlayer2 = new TH1I("zminus_ref_2nd_nhit", "Multiplicity",50, 0, 30);
+ TH1I*  snlayer1 = new TH1I("zminus_sam_1st_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  snlayer2 = new TH1I("zminus_sam_2nd_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  rnlayer1 = new TH1I("zminus_ref_1st_nhit", "Multiplicity",50, 0, 40);
+ TH1I*  rnlayer2 = new TH1I("zminus_ref_2nd_nhit", "Multiplicity",50, 0, 40);
  snlayer1->SetLineColor(2);
  snlayer2->SetLineColor(2);
  rnlayer1->SetLineColor(4);
