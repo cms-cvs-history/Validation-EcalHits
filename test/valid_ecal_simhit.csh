@@ -4,13 +4,14 @@ eval `scramv1 ru -csh`
 
 setenv SAMPLEFILE  simhitoutput.root
 setenv REFERFILE   simhitoutput.root
-setenv ECALDATADIR /afs/cern.ch/user/f/fabiocos/public/Validation/samples
+setenv ECALDATADIR /afs/cern.ch/cms/data/CMSSW/Validation/EcalHits/data
+setenv ECALREFDIR  /afs/cern.ch/cms/data/CMSSW/Validation/EcalHits/data
 
 echo "===========> Validating Ecal Simhits with 30 GeV Photon ......."
 cp  ${ECALDATADIR}/Photon_E30GeV_all.root   testinput.root
 cmsRun valid_ecal_simhit.cfg
 setenv SAMPLEFILE  simhitoutput.root
-setenv REFERFILE   simhitoutput.root #${PWD}/old/PhotonSimHit_E30GeV_all.root
+setenv REFERFILE   simhitoutput.root #${ECALREFDIR}/PhotonSimHit_E30GeV_all.root
 root -b -p -q  EcalSimHitPlots.C
 mv  simhitoutput.root   PhotonSimHit_E30GeV_all.root
 if ( -e testinput.root ) /bin/rm testinput.root
@@ -20,7 +21,7 @@ cp   ${ECALDATADIR}/Photon_E200GeV_all.root  testinput.root
 sed 's/maxEvents=2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_200GeV.cfg
 cmsRun valid_ecal_simhit_200GeV.cfg
 setenv SAMPLEFILE  simhitoutput.root
-setenv REFERFILE   simhitoutput.root #${PWD}/old/PhotonSimHit_E200GeV_all.root
+setenv REFERFILE   simhitoutput.root #${ECALREFDIR}/PhotonSimHit_E200GeV_all.root
 root -b -p -q  EcalSimHitPlots.C
 mv  simhitoutput.root   PhotonSimHit_E200GeV_all.root
 if ( -e testinput.root ) /bin/rm testinput.root
@@ -31,7 +32,7 @@ cp  ${ECALDATADIR}/Photon_E400GeV_all.root   testinput.root
 sed 's/maxEvents=2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_400GeV.cfg
 cmsRun valid_ecal_simhit_400GeV.cfg
 setenv SAMPLEFILE  simhitoutput.root
-setenv REFERFILE   simhitoutput.root #${PWD}/old/PhotonSimHit_E400GeV_all.root
+setenv REFERFILE   simhitoutput.root #${ECALREFDIR}/PhotonSimHit_E400GeV_all.root
 root -b -p -q  EcalSimHitPlots.C
 mv  simhitoutput.root   PhotonSimHit_E400GeV_all.root
 if ( -e testinput.root ) /bin/rm testinput.root
