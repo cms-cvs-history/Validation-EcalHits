@@ -6,7 +6,7 @@
 
 void SimhitPion_all()
 {
- char* filename ="/afs/cern.ch/cms/data/CMSSW/Validation/EcalDigis/data/Pion_Pt60GeV_all_simevent.root";
+ char* filename ="simhitoutput.root";
  char * treename="Events";
  TFile * file = new TFile(filename);
  TTree * events = dynamic_cast<TTree*>(file->Get("Events"));
@@ -30,16 +30,16 @@ void SimhitPion_all()
  label[2] = "Barrel_E3x3";
  label[3] = "Barrel_E4x4";
  label[4] = "Barrel_E5x5";
- label[5] = "Barrel_E1/E4";
- label[6] = "Barrel_E4/E9";
- label[7] = "Barrel_E9/E16";
- label[8] = "Barrel_E16/E25";
- label[9] = "Barrel_E1/E25";
- label[10] = "Barrel_E9/E25";
- label[11] = "Ecal_EB/ETotal";
- label[12] = "Ecal_EE/ETotal";
- label[13] = "Ecal_EP/ETotal";
- label[14] = "Ecal_(EB+EE+EP)/ETotal";
+ label[5] = "Barrel_E1OverE4";
+ label[6] = "Barrel_E4OverE9";
+ label[7] = "Barrel_E9OverE16";
+ label[8] = "Barrel_E16OverE25";
+ label[9] = "Barrel_E1OverE25";
+ label[10] = "Barrel_E9OverE25";
+ label[11] = "Ecal_EBOverETotal";
+ label[12] = "Ecal_EEOverETotal";
+ label[13] = "Ecal_EPOverETotal";
+ label[14] = "Ecal_EBEEEPOverETotal";
  label[15] = "PreShower_EHit_L1zp";
  label[16] = "PreShower_EHit_L2zp";
  label[17] = "Preshower_NHit_L1zp";
@@ -49,12 +49,12 @@ void SimhitPion_all()
  label[21] = "Endcap_E3x3";
  label[22] = "Endcap_E4x4";
  label[23] = "Endcap_E5x5";
- label[24] = "Endcap_E1/E4";
- label[25] = "Endcap_E4/E9";
- label[26] = "Endcap_E9/E16";
- label[27] = "Endcap_E16/E25";
- label[28] = "Endcap_E1/E25";
- label[29] = "Endcap_E9/E25";
+ label[24] = "Endcap_E1OverE4";
+ label[25] = "Endcap_E4OverE9";
+ label[26] = "Endcap_E9OverE16";
+ label[27] = "Endcap_E16OverE25";
+ label[28] = "Endcap_E1OverE25";
+ label[29] = "Endcap_E9OverE25";
  label[30] = "PreShower_EHit_L1zm";
  label[31] = "PreShower_EHit_L2zm";
  label[32] = "Preshower_NHit_L1zm";
@@ -275,8 +275,8 @@ void SimhitPion_all()
  //TProfiles 
   static const int NHisto3 = 2;
   char* label3[NHisto3];
-  label3[0] = "Preshower_EE/ES_zp";
-  label3[1] = "Preshower_EE/ES_zm";
+  label3[0] = "Preshower_EEOverES_zp";
+  label3[1] = "Preshower_EEOverES_zm";
 
 
  TProfile*  pro[NHisto3];
