@@ -6,12 +6,12 @@
 
 void Simhit30GeV_Endcap()
 {
- char* filename ="/afs/cern.ch/cms/data/CMSSW/Validation/EcalDigis/data/Photon_E30GeV_endcap_simevent.root";
+ char* filename ="simhitoutput.root";
  char * treename="Events";
  TFile * file = new TFile(filename);
  TTree * events = dynamic_cast<TTree*>(file->Get("Events"));
  assert(events != 0);
- TBranch * branch = events->GetBranch( "PEcalValidInfo_SimG4Object_EcalValidInfo.obj");
+ TBranch * branch = events->GetBranch( "PEcalValidInfo_SimG4Object_EcalValidInfo_EcalHitsValid.obj");
  assert(branch != 0);
  int nev = events->GetEntries();
 
