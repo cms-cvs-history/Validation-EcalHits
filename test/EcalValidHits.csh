@@ -39,7 +39,7 @@ if ( -e testinput.root ) /bin/rm testinput.root
 
 echo "===========> Validating Ecal Simhits with 200 GeV Photon ......."
 cp   ${ECALDATADIR}/Photon_E200GeV_all.root  testinput.root
-sed 's/maxEvents=2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_200GeV.cfg
+sed 's/maxEvents= 2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_200GeV.cfg
 cmsRun valid_ecal_simhit_200GeV.cfg
 root -b -p -q Simhit200GeV_all.C
 setenv REFFILE "../data/EcalSimHitHisto_200GeV.root"
@@ -50,7 +50,7 @@ if ( -e testinput.root ) /bin/rm testinput.root
 
 echo "===========> Validating Ecal Simhits with 400 GeV Photon ......."
 cp  ${ECALDATADIR}/Photon_E400GeV_all.root   testinput.root
-sed 's/maxEvents=2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_400GeV.cfg
+sed 's/maxEvents= 2000/maxEvents=200/' valid_ecal_simhit.cfg > & ! valid_ecal_simhit_400GeV.cfg
 cmsRun valid_ecal_simhit_400GeV.cfg
 root -b -p -q Simhit400GeV_all.C
 setenv REFFILE "../data/EcalSimHitHisto_400GeV.root"
