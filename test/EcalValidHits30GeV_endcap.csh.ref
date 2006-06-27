@@ -1,0 +1,649 @@
+
+[oval run] =================================================
+[oval run] USER : huangxt
+[oval run] HOST : cmswn257.fnal.gov
+[oval run] run tool: oval
+[oval run] final instruction: EcalValidHits30GeV_endcap.csh
+[oval run] =================================================
+
+===========> Validating Endcap Ecal Simhits with 30 GeV Photon .......
+
+       =================================================
+
+       Message Log File written by MessageLogger service 
+       
+       =================================================
+       
+%MSG-i DDLParser:  26-Jun-2006 21:41:56 CDT pre-events
+Start Parsing.  Validation is set off for the time being.
+Element: Constant (64)
+%MSG-i DDLParser:  26-Jun-2006 21:41:58 CDT pre-events
+Start Parsing.  Validation is set off for the time being.
+Element: Constant (64)
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HVQF
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HVQF
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HVQX
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HVQX
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+=========>
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+DC: Exception:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+SpecPar will be ignored for the following selection-std::string:
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HFFibre.*
+%MSG-e Specific:  26-Jun-2006 21:42:02 CDT pre-events
+//HFFibre.*
+
+*************************************************************
+ Geant4 version Name: geant4-07-01    (30-June-2005)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+ Run Manager constructed 
+ OscarProducer initializing 
+MantisConverter: solidshape=TruncatedTube(section) MagneticFieldVolumes:V_3   TruncatedTube(section):  zHalf=330.505cm rIn=347.833cm rOut=383.104cm startPhi=0deg deltaPhi=30deg cutAtStart=365.554cm cutAtDelta=383.104cm cutInside=0
+before
+after
+G4Tubs: 3478.33 3831.04 3305.05 0 30
+MagneticFieldVolumes:V_3   TruncatedTube(section):  zHalf=330.505cm rIn=347.833cm rOut=383.104cm startPhi=0deg deltaPhi=30deg cutAtStart=365.554cm cutAtDelta=383.104cm cutInside=0
+cath=0.337762
+hypo=1.94507
+al=79.9999
+deltaPhi=30
+r=3.65554
+R=3.83104
+alpha=-79.9999
+
+   [ (     0.17365     -0.984807             0)
+     (    0.984807       0.17365             0)
+     (           0             0             1) ]
+
+trans=(81458.4,0,0)
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter::upDate() starts
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive CALO Class Name CaloTrkProcessing ROU Name CaloHitsTk
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_1_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_2_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_3_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_4_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_5_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_6_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_7_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_8_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_9_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_10_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_11_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_12_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_13_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_14_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_15_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_16_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_17_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_18_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_19_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_20_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_21_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_22_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_23_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_24_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_25_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_26_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_27_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_28_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_29_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_30_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_31_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_32_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_33_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_34_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_35_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_36_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_37_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_38_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_39_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_40_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_41_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_42_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_43_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_44_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_45_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_46_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_47_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_48_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_49_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_50_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_51_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_52_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_53_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_54_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_55_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_56_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_57_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_58_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_59_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_60_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_61_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_62_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_63_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_64_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_65_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_66_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_67_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_68_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_69_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_70_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_71_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_72_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_73_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_74_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_75_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_76_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_77_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_78_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_79_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_80_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_81_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_82_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_83_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_84_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_85_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_86_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_87_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_88_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_89_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_90_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_91_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_92_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_93_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_94_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_95_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_96_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_97_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+%MSG-i SimG4CoreGeometry:  26-Jun-2006 21:42:05 CDT pre-events
+ DDG4SensitiveConverter: Sensitive EBRY_98_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
+ World volume defined 
+Creating a new Timing Report
+StopWatch bias 5.01704e-09
+CPUWatch bias 0.00011
+
+         ___________________________________        
+      .-'                                   '-.     
+    .'      Magnetic Field Geometry built      `.   
+   /                                             \  
+  ;         Barrel volumes: 2436                  ; 
+  ;         Endcap volumes: 816                   ; 
+   \                                             /  
+    `.          Fasten your seatbelt.          .'   
+      `-.___________________________________.-'     
+
+B-field(T) at (0,0,0)(cm):  (9.08977e-22,-9.09131e-22,4.06811) 
+%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 21:42:07 CDT pre-events
+ AttachSD: trying to find something for CaloTrkProcessing CaloHitsTk
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+CaloTrkProcessing: Initailised with TestBeam = 0 Emin = 0.01 MeV
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+CaloTrkProcessing: Names for Calorimeter:
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+ (0) CALO
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+ (1) VCAL
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+CaloTrkProcessing: Names for Inside:
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+ (0) BEAM
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+ (1) Tracker
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+ (2) NotFound
+%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 21:42:07 CDT pre-events
+ AttachSD: trying to find something for EcalSensitiveDetector EcalHitsEB
+%MSG-i CaloSim:  26-Jun-2006 21:42:07 CDT pre-events
+CaloSD: Minimum energy of track for saving it 1 GeV
+        Use of HitID Map 1
+        Check last 25 before saving the hit
+%MSG-i EcalGeom:  26-Jun-2006 21:42:07 CDT pre-events
+Creating EcalBarrelNumberingScheme
+%MSG-i EcalSim:  26-Jun-2006 21:42:07 CDT pre-events
+EcalSD: updates numbering scheme for EcalHitsEB
+
+%MSG-i EcalSim:  26-Jun-2006 21:42:07 CDT pre-events
+ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
+%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 21:42:08 CDT pre-events
+ AttachSD: trying to find something for EcalSensitiveDetector EcalHitsEE
+%MSG-i CaloSim:  26-Jun-2006 21:42:08 CDT pre-events
+CaloSD: Minimum energy of track for saving it 1 GeV
+        Use of HitID Map 1
+        Check last 25 before saving the hit
+%MSG-i EcalGeom:  26-Jun-2006 21:42:08 CDT pre-events
+Creating EcalEndcapNumberingScheme
+%MSG-i EcalSim:  26-Jun-2006 21:42:08 CDT pre-events
+EcalSD: updates numbering scheme for EcalHitsEE
+
+%MSG-i EcalSim:  26-Jun-2006 21:42:08 CDT pre-events
+ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
+%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 21:42:09 CDT pre-events
+ AttachSD: trying to find something for EcalSensitiveDetector EcalHitsES
+%MSG-i CaloSim:  26-Jun-2006 21:42:09 CDT pre-events
+CaloSD: Minimum energy of track for saving it 1 GeV
+        Use of HitID Map 1
+        Check last 25 before saving the hit
+%MSG-i EcalGeom:  26-Jun-2006 21:42:09 CDT pre-events
+Creating ShowerForwardNumberingScheme
+%MSG-i EcalSim:  26-Jun-2006 21:42:09 CDT pre-events
+EcalSD: updates numbering scheme for EcalHitsES
+
+%MSG-i EcalSim:  26-Jun-2006 21:42:09 CDT pre-events
+ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
+%MSG-i SimG4CoreApplication:  26-Jun-2006 21:42:09 CDT pre-events
+ RunManager: Sensitive Detector building finished; found 0 Tk type Producers, and 4 Calo type producers 
+ Generator constructed 
+
+
+You are using the simulation engine reuse library: PACK 2.4
+
+
+You are using the simulation engine: QGSP 2.8
+ Setting the Threshold for eBrem (CMS modificatios) to 500 MeV
+ Setting Production Cuts per Region
+
+phot:  Total cross sections from Sandia parametrisation. 
+
+compt:  Total cross sections has a good parametrisation from 10 KeV to (100/Z) GeV
+      Sampling according Klein-Nishina model
+      tables are built for  gamma
+      Lambda tables from 100 eV  to 100 GeV in 90 bins.
+
+conv:  Total cross sections has a good parametrisation from 1.5 MeV to 100 GeV for all Z;
+      sampling secondary e+e- according to the Bethe-Heitler model
+      tables are built for  gamma
+      Lambda tables from 1.022 MeV to 100 GeV in 100 bins.
+
+eBrem:   tables are built for  e-
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Total cross sections from a parametrisation based on the EEDL data library. 
+      Good description from 1 KeV to 100 GeV, log scale extrapolation above 100 GeV.
+
+eIoni:   tables are built for  e-
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Delta cross sections from Moller+Bhabha, good description from 1 KeV to 100 GeV.
+      Step function: finalRange(mm)= 1, dRoverRange= 1, integral: 1
+
+msc:  Model variant of multiple scattering for e-
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+      Boundary algorithm is active with facrange= 0.199
+
+eBrem:   tables are built for  e+
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Total cross sections from a parametrisation based on the EEDL data library. 
+      Good description from 1 KeV to 100 GeV, log scale extrapolation above 100 GeV.
+
+annihil:       Heilter model of formula of annihilation into 2 photons
+      tables are built for  e+
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+
+annihil:       Heilter model of formula of annihilation into 2 photons
+      tables are built for  e+
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+
+eIoni:   tables are built for  e+
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Delta cross sections from Moller+Bhabha, good description from 1 KeV to 100 GeV.
+      Step function: finalRange(mm)= 1, dRoverRange= 1, integral: 1
+
+hIoni:   tables are built for  proton
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Scaling relation is used to proton dE/dx and range
+      Bether-Bloch model for Escaled > 2 MeV, ICRU49 parametrisation for protons below.
+      Step function: finalRange(mm)= 1, dRoverRange= 0.2, integral: 1
+
+msc:  Model variant of multiple scattering for proton
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+      Boundary algorithm is active with facrange= 0.199
+
+ionIoni:   tables are built for  GenericIon
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Scaling relation is used to proton dE/dx and range
+      Bether-Bloch model for Escaled > 2 MeV, ICRU49 parametrisation for alpha particles below.
+      Step function: finalRange(mm)= 0.1, dRoverRange= 0.1, integral: 1
+
+msc:  Model variant of multiple scattering for GenericIon
+
+muIoni:   tables are built for  mu+
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Bether-Bloch model for E > 0.2 MeV, parametrisation of Bragg peak below, 
+      radiative corrections for E > 1 GeV
+      Step function: finalRange(mm)= 1, dRoverRange= 0.2, integral: 1
+
+muBrems:   tables are built for  mu+
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Parametrised model 
+
+muPairProd:   tables are built for  mu+
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Parametrised model 
+
+msc:  Model variant of multiple scattering for mu+
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+      Boundary algorithm is active with facrange= 0.199
+
+muIoni:   tables are built for  mu-
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Bether-Bloch model for E > 0.2 MeV, parametrisation of Bragg peak below, 
+      radiative corrections for E > 1 GeV
+      Step function: finalRange(mm)= 1, dRoverRange= 0.2, integral: 1
+
+muBrems:   tables are built for  mu-
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Parametrised model 
+
+muPairProd:   tables are built for  mu-
+      dE/dx and range tables from 100 eV  to 100 TeV in 120 bins.
+      Lambda tables from threshold to 100 TeV in 120 bins.
+      Parametrised model 
+
+msc:  Model variant of multiple scattering for pi-
+      Lambda tables from 100 eV  to 100 TeV in 120 bins.
+      Boundary algorithm is active with facrange= 0.199
+%MSG-i SimG4CoreApplication:  26-Jun-2006 21:42:30 CDT pre-events
+ RunManager: user StackingAction overridden 
+file:simhitoutput.root: level[Always] Root file version:51102
+%MSG-i FwkReport:  26-Jun-2006 21:42:34 CDT BeforeEvents
+Begin processing the 1th record. Run 1, Event 1
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:42:35 CDT 1/1
+CaloMap: Initialised
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 21:42:42 CDT 1/1
+ RunManager: saved : Event  1 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 21:42:42 CDT BetweenEvents
+Begin processing the 2th record. Run 1, Event 2
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:46:07 CDT 1/67
+CaloSD: EcalHitsEB store 15 hits out of 15 recorded with 0 track IDs not given properly
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:47:49 CDT 1/100
+CaloSD: EcalHitsEE store 204 hits out of 204 recorded with 0 track IDs not given properly
+%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:48:12 CDT 1/108
+CaloSD: Problem with primaryID **** set by force to TkID **** 23668
+%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:48:12 CDT 1/108
+CaloSD: Problem with primaryID **** set by force to TkID **** 23668
+%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:48:12 CDT 1/108
+CaloSD: Problem with primaryID **** set by force to TkID **** 23672
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:51:14 CDT 1/167
+CaloSD: EcalHitsEB store 22 hits out of 22 recorded with 0 track IDs not given properly
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 21:52:59 CDT 1/200
+ RunManager: saved : Event  200 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 21:52:59 CDT BetweenEvents
+Begin processing the 201th record. Run 1, Event 201
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 21:58:03 CDT 1/300
+CaloSD: EcalHitsEE store 193 hits out of 193 recorded with 0 track IDs not given properly
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 21:58:03 CDT 1/300
+ RunManager: saved : Event  300 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 21:58:03 CDT BetweenEvents
+Begin processing the 301th record. Run 1, Event 301
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 22:08:16 CDT 1/500
+ RunManager: saved : Event  500 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 22:08:16 CDT BetweenEvents
+Begin processing the 501th record. Run 1, Event 501
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 22:11:40 CDT 1/567
+CaloSD: EcalHitsEB store 4 hits out of 4 recorded with 0 track IDs not given properly
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 22:28:40 CDT 1/900
+ RunManager: saved : Event  900 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 22:28:40 CDT BetweenEvents
+Begin processing the 901th record. Run 1, Event 901
+WARNING - G4Navigator::ComputeStep()
+          Track stuck, not moving for 10 steps
+          in volume -EV41- at point (29.59712557,-683.1518609,3196.830893)
+          direction: (-0.3876214379,0.2525650427,0.8865441445).
+          Potential geometry or navigation problem !
+          Trying pushing it of 9e-10 mm ...
+%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 22:38:53 CDT 1/1100
+CaloSD: EcalHitsEE store 162 hits out of 162 recorded with 0 track IDs not given properly
+%MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
+       26-Jun-2006 23:09:31 CDT 1/1700
+ RunManager: saved : Event  1700 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
+%MSG-i FwkReport:  BetweenModules 26-Jun-2006 23:09:31 CDT BetweenEvents
+Begin processing the 1701th record. Run 1, Event 1701
+ OscarProducer terminating 
+%MSG-i EcalGeom:  BetweenModules 26-Jun-2006 23:24:54 CDT BetweenEvents
+Deleting EcalBarrelNumberingScheme
+
+Main Thread CPU elapsed time 611042u 247s
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.11/02     19 April 2006   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+Compiled on 19 April 2006 for linux with thread support.
+
+CINT/ROOT C/C++ Interpreter version 5.16.11, April 14, 2006
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+Loading FWLite...
+
+Processing Simhit30GeV_Endcap.C...
+Total E = 30000
+Histogram file created!! 
+  *******************************************
+  *                                         *
+  *        W E L C O M E  to  R O O T       *
+  *                                         *
+  *   Version   5.11/02     19 April 2006   *
+  *                                         *
+  *  You are welcome to visit our Web site  *
+  *          http://root.cern.ch            *
+  *                                         *
+  *******************************************
+
+Compiled on 19 April 2006 for linux with thread support.
+
+CINT/ROOT C/C++ Interpreter version 5.16.11, April 14, 2006
+Type ? for help. Commands must be C++ statements.
+Enclose multiple statements between { }.
+Loading FWLite...
+
+Processing DoCompare.C("30GeVEndcap")...
+Initializing HistoCompare... 
+(class HistoCompare)154368160
+Initializing HistoCompare...
+[OVAL]  PV = 1 of Ecal_EEOverETotal distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEcal_EEOverETotal.eps has been created
+[OVAL]  PV = 1 of Ecal_EPOverETotal distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEcal_EPOverETotal.eps has been created
+[OVAL]  PV = 1 of Ecal_EBEEEPOverETotal distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEcal_EBEEEPOverETotal.eps has been created
+[OVAL]  PV = 1 of PreShower_EHit_L1zp distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapPreShower_EHit_L1zp.eps has been created
+[OVAL]  PV = 1 of PreShower_EHit_L2zp distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapPreShower_EHit_L2zp.eps has been created
+[OVAL]  PV = 1 of Preshower_NHit_L1zp distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapPreshower_NHit_L1zp.eps has been created
+[OVAL]  PV = 1 of Preshower_NHit_L2zp distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapPreshower_NHit_L2zp.eps has been created
+[OVAL]  PV = 1 of Endcap_E1x1 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E1x1.eps has been created
+[OVAL]  PV = 1 of Endcap_E2x2 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E2x2.eps has been created
+[OVAL]  PV = 1 of Endcap_E3x3 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E3x3.eps has been created
+[OVAL]  PV = 1 of Endcap_E4x4 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E4x4.eps has been created
+[OVAL]  PV = 1 of Endcap_E5x5 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E5x5.eps has been created
+[OVAL]  PV = 1 of Endcap_E1OverE4 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E1OverE4.eps has been created
+[OVAL]  PV = 1 of Endcap_E4OverE9 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E4OverE9.eps has been created
+[OVAL]  PV = 1 of Endcap_E9OverE16 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E9OverE16.eps has been created
+[OVAL]  PV = 1 of Endcap_E16OverE25 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E16OverE25.eps has been created
+[OVAL]  PV = 1 of Endcap_E1OverE25 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E1OverE25.eps has been created
+[OVAL]  PV = 1 of Endcap_E9OverE25 distribution.
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_E9OverE25.eps has been created
+[OVAL] Endcap_Longitudinal PV = 1
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_Longitudinal.eps has been created
+[OVAL] Endcap_Occupancy PV = 1
+Info in <TCanvas::Print>: eps file 30GeVEndcapEndcap_Occupancy.eps has been created
+Error in <TProfile::Chi2Test>: bins with non-zero content and zero error
+[OVAL] Preshower_EEOverES_zp PV = 0
+Info in <TCanvas::Print>: eps file 30GeVEndcapPreshower_EEOverES_zp.eps has been created
+
+[oval run] ==========================================
+[oval run] result: OK
+[oval run] ==========================================
+
