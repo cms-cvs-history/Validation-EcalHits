@@ -87,11 +87,11 @@ void SimhitPion_all()
  h1[17] = new TH1F(label[17], "Multiplicity of the 1st Layer",50, 0, 30);
  h1[18] = new TH1F(label[18], "Multiplicity of the 2nd Layer",50, 0, 30);
 
- h1[19] = new TH1F(label[19],"E1x1",50, 1.0e+5, 4.1e+5);
- h1[20] = new TH1F(label[20],"E2x2",50, 2.0e+5, 4.1e+5);
- h1[21] = new TH1F(label[21],"E3x3",50, 3.0e+5, 4.1e+5);
- h1[22] = new TH1F(label[22],"E4x4",50, 3.0e+5, 4.1e+5);
- h1[23] = new TH1F(label[23],"E5x5",50, 3.0e+5, 4.1e+5);
+ h1[19] = new TH1F(label[19],"E1x1",50, 1.0e+2, 4.1e+5);
+ h1[20] = new TH1F(label[20],"E2x2",50, 2.0e+2, 4.1e+5);
+ h1[21] = new TH1F(label[21],"E3x3",50, 3.0e+2, 4.1e+5);
+ h1[22] = new TH1F(label[22],"E4x4",50, 3.0e+2, 4.1e+5);
+ h1[23] = new TH1F(label[23],"E5x5",50, 3.0e+2, 4.1e+5);
 
  h1[24] =new TH1F(label[24],"E1/E4"   ,100, 0.2, 1.1);
  h1[25] = new TH1F(label[25],"E4/E9"   ,100, 0.4, 1.1);
