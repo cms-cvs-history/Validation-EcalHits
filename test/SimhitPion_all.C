@@ -70,17 +70,17 @@ void SimhitPion_all()
  h1[3] = new TH1F(label[3],"E4x4",50, 5., 5.5e+2);
  h1[4] = new TH1F(label[4],"E5x5",50, 5., 5.5e+2);
 
- h1[5] = new TH1F(label[5],"E1/E4"   ,100, 0.2, 1.1);
- h1[6] = new TH1F(label[6],"E4/E9"   ,100, 0.4, 1.1);
- h1[7] = new TH1F(label[7],"E9/E16"  ,100, 0.4, 1.1);
- h1[8] = new TH1F(label[8],"E16/E25" ,100, 0.4, 1.1);
- h1[9] = new TH1F(label[9],"E1/E25"  ,100, 0.2, 1.1);
- h1[10] = new TH1F(label[10] ,"E9/E25"  ,100, 0.4, 1.1);
+ h1[5] = new TH1F(label[5],"E1/E4"   ,50, 0.2, 1.1);
+ h1[6] = new TH1F(label[6],"E4/E9"   ,50, 0.4, 1.1);
+ h1[7] = new TH1F(label[7],"E9/E16"  ,50, 0.4, 1.1);
+ h1[8] = new TH1F(label[8],"E16/E25" ,50, 0.4, 1.1);
+ h1[9] = new TH1F(label[9],"E1/E25"  ,50, 0.2, 1.1);
+ h1[10] = new TH1F(label[10] ,"E9/E25"  ,50 , 0.4, 1.1);
 
- h1[11] = new TH1F(label[11],"#frac{E_{Barrel}}{E_{Inci}}", 100 , 0.0 , 1.02);
- h1[12] = new TH1F(label[12],"#frac{E_{Endcap}}{E_{Inci}}", 100 , 0.0 , 0.001);
- h1[13] = new TH1F(label[13],"#frac{E_{Preshower}}{E_{Inci}}", 100 , 0. , 0.001);
- h1[14] = new TH1F(label[14],"#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 100 , 0.0 , 1.02);
+ h1[11] = new TH1F(label[11],"#frac{E_{Barrel}}{E_{Inci}}", 20 , 0.0 , 1.02);
+ h1[12] = new TH1F(label[12],"#frac{E_{Endcap}}{E_{Inci}}", 20 , 0.0 , 0.001);
+ h1[13] = new TH1F(label[13],"#frac{E_{Preshower}}{E_{Inci}}", 20 , 0. , 0.001);
+ h1[14] = new TH1F(label[14],"#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 20 , 0.0 , 1.02);
 
  h1[15] = new TH1F(label[15], "Energy Sepctrum of the 1st Layer",50, 0, 10);
  h1[16] = new TH1F(label[16], "Energy Sepctrum of the 2nd Layer",50, 0, 10);;
@@ -93,12 +93,12 @@ void SimhitPion_all()
  h1[22] = new TH1F(label[22],"E4x4",50, 3.0e+2, 4.1e+5);
  h1[23] = new TH1F(label[23],"E5x5",50, 3.0e+2, 4.1e+5);
 
- h1[24] =new TH1F(label[24],"E1/E4"   ,100, 0.2, 1.1);
- h1[25] = new TH1F(label[25],"E4/E9"   ,100, 0.4, 1.1);
- h1[26] = new TH1F(label[26],"E9/E16"  ,100, 0.4, 1.1);
- h1[27] = new TH1F(label[27],"E16/E25" ,100, 0.4, 1.1);
- h1[28] = new TH1F(label[28],"E1/E25"  ,100, 0.2, 1.1);
- h1[29] = new TH1F(label[29] ,"E9/E25"  ,100, 0.4, 1.1);
+ h1[24] =new TH1F(label[24],"E1/E4"   ,50, 0.2, 1.1);
+ h1[25] = new TH1F(label[25],"E4/E9"   ,50, 0.4, 1.1);
+ h1[26] = new TH1F(label[26],"E9/E16"  ,50, 0.4, 1.1);
+ h1[27] = new TH1F(label[27],"E16/E25" ,50, 0.4, 1.1);
+ h1[28] = new TH1F(label[28],"E1/E25"  ,50, 0.2, 1.1);
+ h1[29] = new TH1F(label[29] ,"E9/E25"  ,50, 0.4, 1.1);
 
 
  h1[30] = new TH1F(label[30], "Energy Sepctrum of the 1st Layer",50, 0, 10);
@@ -118,7 +118,7 @@ void SimhitPion_all()
     ebcluster[3] = EcalInfo.eb4x4();
     ebcluster[4] = EcalInfo.eb5x5();
     //transvers profile
-    for (int j =0; j<5; j++) {  h1[j]->Fill( ebcluster[j]); }
+    for (int j =0; j<5; j++) { if (ebcluster[0] != 0.0)  h1[j]->Fill( ebcluster[j]); }
     //ratio of transvers profile
     if( (ebcluster[1] != 0) &&  (ebcluster[2] != 0) && (ebcluster[3] != 0)  && (ebcluster[4] != 0)  ){
          h1[5] ->Fill(ebcluster[0]/ebcluster[1]);
@@ -189,7 +189,7 @@ void SimhitPion_all()
     eecluster[3] = EcalInfo.ee4x4();
     eecluster[4] = EcalInfo.ee5x5();
     //transvers profile
-    for (int j =0; j<5; j++) {  h1[j+19]->Fill( eecluster[j]); }
+    for (int j =0; j<5; j++) { if (eecluster[0] != 0.0)  h1[j+19]->Fill( eecluster[j]); }
     //ratio of transvers profile
     if( (eecluster[1] != 0) &&  (eecluster[2] != 0) && (eecluster[3] != 0)  && (eecluster[4] != 0)  ){
          h1[24] ->Fill(eecluster[0]/eecluster[1]);
