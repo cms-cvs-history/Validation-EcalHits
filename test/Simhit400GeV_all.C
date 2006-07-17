@@ -64,47 +64,47 @@ void Simhit400GeV_all()
 
  TH1F * h1[NHisto];
  
- h1[0] = new TH1F(label[0],"E1x1",50, 1.0e+5, 4.1e+5);
- h1[1] = new TH1F(label[1],"E2x2",50, 2.0e+5, 4.1e+5);
- h1[2] = new TH1F(label[2],"E3x3",50, 3.0e+5, 4.1e+5);
+ h1[0] = new TH1F(label[0],"E1x1",30, 1.0e+5, 4.1e+5);
+ h1[1] = new TH1F(label[1],"E2x2",30, 2.0e+5, 4.1e+5);
+ h1[2] = new TH1F(label[2],"E3x3",30, 3.0e+5, 4.1e+5);
  h1[3] = new TH1F(label[3],"E4x4",50, 3.0e+5, 4.1e+5);
- h1[4] = new TH1F(label[4],"E5x5",50, 3.0e+5, 4.1e+5);
+ h1[4] = new TH1F(label[4],"E5x5",30, 3.0e+5, 4.1e+5);
 
- h1[5] = new TH1F(label[5],"E1/E4"   ,100, 0.2, 1.1);
- h1[6] = new TH1F(label[6],"E4/E9"   ,100, 0.4, 1.1);
- h1[7] = new TH1F(label[7],"E9/E16"  ,100, 0.4, 1.1);
- h1[8] = new TH1F(label[8],"E16/E25" ,100, 0.4, 1.1);
- h1[9] = new TH1F(label[9],"E1/E25"  ,100, 0.2, 1.1);
- h1[10] = new TH1F(label[10] ,"E9/E25"  ,100, 0.4, 1.1);
+ h1[5] = new TH1F(label[5],"E1/E4"   ,30, 0.2, 1.1);
+ h1[6] = new TH1F(label[6],"E4/E9"   ,30, 0.4, 1.1);
+ h1[7] = new TH1F(label[7],"E9/E16"  ,30, 0.4, 1.1);
+ h1[8] = new TH1F(label[8],"E16/E25" ,30, 0.4, 1.1);
+ h1[9] = new TH1F(label[9],"E1/E25"  ,30, 0.2, 1.1);
+ h1[10] = new TH1F(label[10] ,"E9/E25"  ,30, 0.4, 1.1);
 
- h1[11] = new TH1F(label[11],"#frac{E_{Barrel}}{E_{Inci}}", 100 , 0.8 , 1.02);
- h1[12] = new TH1F(label[12],"#frac{E_{Endcap}}{E_{Inci}}", 100 , 0.8 , 1.02);
- h1[13] = new TH1F(label[13],"#frac{E_{Preshower}}{E_{Inci}}", 100 , 0. , 0.001);
- h1[14] = new TH1F(label[14],"#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 100 , 0.8 , 1.02);
+ h1[11] = new TH1F(label[11],"#frac{E_{Barrel}}{E_{Inci}}", 30 , 0.8 , 1.02);
+ h1[12] = new TH1F(label[12],"#frac{E_{Endcap}}{E_{Inci}}", 30 , 0.8 , 1.02);
+ h1[13] = new TH1F(label[13],"#frac{E_{Preshower}}{E_{Inci}}", 30 , 0. , 0.001);
+ h1[14] = new TH1F(label[14],"#frac{E_{Barrel}+E_{Endcap}+ E_{Preshower}}{E_{Inci}}", 30 , 0.8 , 1.02);
 
- h1[15] = new TH1F(label[15], "Energy Sepctrum of the 1st Layer",50, 0, 10);
- h1[16] = new TH1F(label[16], "Energy Sepctrum of the 2nd Layer",50, 0, 10);;
- h1[17] = new TH1F(label[17], "Multiplicity of the 1st Layer",50, 0, 30);
- h1[18] = new TH1F(label[18], "Multiplicity of the 2nd Layer",50, 0, 30);
+ h1[15] = new TH1F(label[15], "Energy Sepctrum of the 1st Layer",20, 0, 10);
+ h1[16] = new TH1F(label[16], "Energy Sepctrum of the 2nd Layer",20, 0, 10);;
+ h1[17] = new TH1F(label[17], "Multiplicity of the 1st Layer",20, 0, 30);
+ h1[18] = new TH1F(label[18], "Multiplicity of the 2nd Layer",20, 0, 30);
 
- h1[19] = new TH1F(label[19],"E1x1",50, 1.0e+5, 4.1e+5);
- h1[20] = new TH1F(label[20],"E2x2",50, 2.0e+5, 4.1e+5);
- h1[21] = new TH1F(label[21],"E3x3",50, 3.0e+5, 4.1e+5);
- h1[22] = new TH1F(label[22],"E4x4",50, 3.0e+5, 4.1e+5);
- h1[23] = new TH1F(label[23],"E5x5",50, 3.0e+5, 4.1e+5);
+ h1[19] = new TH1F(label[19],"E1x1",30, 1.0e+5, 4.1e+5);
+ h1[20] = new TH1F(label[20],"E2x2",30, 2.0e+5, 4.1e+5);
+ h1[21] = new TH1F(label[21],"E3x3",30, 3.0e+5, 4.1e+5);
+ h1[22] = new TH1F(label[22],"E4x4",30, 3.0e+5, 4.1e+5);
+ h1[23] = new TH1F(label[23],"E5x5",30, 3.0e+5, 4.1e+5);
 
- h1[24] =new TH1F(label[24],"E1/E4"   ,100, 0.2, 1.1);
- h1[25] = new TH1F(label[25],"E4/E9"   ,100, 0.4, 1.1);
- h1[26] = new TH1F(label[26],"E9/E16"  ,100, 0.4, 1.1);
- h1[27] = new TH1F(label[27],"E16/E25" ,100, 0.4, 1.1);
- h1[28] = new TH1F(label[28],"E1/E25"  ,100, 0.2, 1.1);
- h1[29] = new TH1F(label[29] ,"E9/E25"  ,100, 0.4, 1.1);
+ h1[24] =new TH1F(label[24],"E1/E4"    ,30, 0.2, 1.1);
+ h1[25] = new TH1F(label[25],"E4/E9"   ,30, 0.4, 1.1);
+ h1[26] = new TH1F(label[26],"E9/E16"  ,30, 0.4, 1.1);
+ h1[27] = new TH1F(label[27],"E16/E25" ,30, 0.4, 1.1);
+ h1[28] = new TH1F(label[28],"E1/E25"  ,30, 0.2, 1.1);
+ h1[29] = new TH1F(label[29] ,"E9/E25"  ,30, 0.4, 1.1);
 
 
- h1[30] = new TH1F(label[30], "Energy Sepctrum of the 1st Layer",50, 0, 10);
- h1[31] = new TH1F(label[31], "Energy Sepctrum of the 2nd Layer",50, 0, 10);;
- h1[32] = new TH1F(label[32], "Multiplicity of the 1st Layer",50, 0, 30);
- h1[33] = new TH1F(label[33], "Multiplicity of the 2nd Layer",50, 0, 30);
+ h1[30] = new TH1F(label[30], "Energy Sepctrum of the 1st Layer",20, 0, 10);
+ h1[31] = new TH1F(label[31], "Energy Sepctrum of the 2nd Layer",20, 0, 10);;
+ h1[32] = new TH1F(label[32], "Multiplicity of the 1st Layer",20, 0, 30);
+ h1[33] = new TH1F(label[33], "Multiplicity of the 2nd Layer",20, 0, 30);
 
 
 
