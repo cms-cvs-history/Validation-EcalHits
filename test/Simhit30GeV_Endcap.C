@@ -22,7 +22,7 @@ void Simhit30GeV_Endcap()
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 18; 
+ static const int NHisto = 20; 
  char* label[NHisto];
  
  label[0] = "Ecal_EEOverETotal";
@@ -43,7 +43,8 @@ void Simhit30GeV_Endcap()
  label[15] = "Endcap_E16OverE25";
  label[16] = "Endcap_E1OverE25";
  label[17] = "Endcap_E9OverE25";
-
+ label[18] = "Preshower_E1alphaE2_zp";
+ label[19] = "Preshower_E2OverE1_zp";
 
 
  TH1F * h1[NHisto];
@@ -70,6 +71,8 @@ void Simhit30GeV_Endcap()
  h1[15] = new TH1F(label[15],"E16/E25" ,100, 0.4, 1.1);
  h1[16] = new TH1F(label[16],"E1/E25"  ,100, 0.2, 1.1);
  h1[17] = new TH1F(label[17] ,"E9/E25"  ,100, 0.4, 1.1);
+ h1[18] = new TH1F(label[18], "(E1+ 0.7*E2) in ZPlus",30, 0, 50);
+ h1[19] = new TH1F(label[19], "E2/E1 in ZPlus",50, 0, 10);
 
  float ee,be, se, pe;
  for ( int j = 0; j < nev; j++){
@@ -198,7 +201,12 @@ void Simhit30GeV_Endcap()
 
    for (int i = 0; i<nhit1eszp;i++){ totale1eszp += ehit1eszp[i]; }
    for (int i = 0; i<nhit2eszp;i++){ totale2eszp += ehit2eszp[i]; }
-   if ( peta > 1.653 && peta < 2.6 )   pro[0]->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
+   if ( peta > 1.653 && peta < 2.6 )  {
+       pro[0]->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
+       h1[18]->Fill(totale1eszp+0.7*totale2eszp);
+       if( totale1eszp != 0.0) h1[19]->Fill(totale2eszp/totale1eszp);
+
+   } 
  }
 
  cout<<"Total E = "<<TotalE<<endl;
