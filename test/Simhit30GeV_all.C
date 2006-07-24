@@ -22,7 +22,7 @@ void Simhit30GeV_all()
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 34; 
+ static const int NHisto = 38; 
  char* label[NHisto];
  
  label[0] = "Barrel_E1x1";
@@ -59,7 +59,10 @@ void Simhit30GeV_all()
  label[31] = "PreShower_EHit_L2zm";
  label[32] = "Preshower_NHit_L1zm";
  label[33] = "Preshower_NHit_L2zm";
-
+ label[34] = "Preshower_E1alphaE2_zm";
+ label[35] = "Preshower_E1alphaE2_zp";
+ label[36] = "Preshower_E2OverE1_zm";
+ label[37] = "Preshower_E2OverE1_zp";
 
 
  TH1F * h1[NHisto];
@@ -106,6 +109,11 @@ void Simhit30GeV_all()
  h1[32] = new TH1F(label[32], "Multiplicity of the 1st Layer",20, 0, 30);
  h1[33] = new TH1F(label[33], "Multiplicity of the 2nd Layer",20, 0, 30);
 
+ h1[34] = new TH1F(label[34], "(E1+ 0.7*E2) in ZMius",30, 0, 50);
+ h1[35] = new TH1F(label[35], "(E1+ 0.7*E2) in ZPlus",30, 0, 50);
+
+ h1[36] = new TH1F(label[36], "E2/E1 in ZMius",50, 0, 10);
+ h1[37] = new TH1F(label[37], "E2/E1 in ZPlus",50, 0, 10);
 
 
  float  ebcluster[5];
@@ -321,8 +329,17 @@ void Simhit30GeV_all()
    for (int i = 0; i<nhit2eszm;i++){ totale2eszm += ehit2eszm[i]; }
    for (int i = 0; i<nhit1eszp;i++){ totale1eszp += ehit1eszp[i]; }
    for (int i = 0; i<nhit2eszp;i++){ totale2eszp += ehit2eszp[i]; }
-   if ( peta > -2.6 && peta< -1.653 )  pro[0]->Fill((totale1eszm+0.7*totale2eszm)/0.09,totaleeezm);
-   if ( peta > 1.653 && peta < 2.6 )   pro[1]->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
+   if ( peta > -2.6 && peta< -1.653 )  {
+          pro[0]->Fill((totale1eszm+0.7*totale2eszm)/0.09,totaleeezm);
+          h1[34]->Fill(totale1eszm+0.7*totale2eszm);
+          if(totale1eszm != 0.0) h1[36]->Fill(totale2eszm/totale1eszm);         
+   }
+
+   if ( peta > 1.653 && peta < 2.6 )  {
+         pro[1]->Fill((totale1eszp+0.7*totale2eszp)/0.09,totaleeezp);
+         h1[35]->Fill(totale1eszp+0.7*totale2eszp);
+         if( totale1eszp != 0.0) h1[37]->Fill(totale2eszp/totale1eszp);
+   }
  }
 
  cout<<"Total E = "<<TotalE<<endl;
