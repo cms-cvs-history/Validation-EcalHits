@@ -1,7 +1,7 @@
 
 [oval run] =================================================
 [oval run] USER : huangxt
-[oval run] HOST : cmswn257.fnal.gov
+[oval run] HOST : cmswn227.fnal.gov
 [oval run] run tool: oval
 [oval run] final instruction: EcalValidHitsPion.csh
 [oval run] =================================================
@@ -14,59 +14,59 @@
        
        =================================================
        
-%MSG-i DDLParser:  26-Jun-2006 23:25:13 CDT pre-events
+%MSG-i DDLParser:  25-Jul-2006 18:11:24 CDT pre-events
 Start Parsing.  Validation is set off for the time being.
 Element: Constant (64)
-%MSG-i DDLParser:  26-Jun-2006 23:25:14 CDT pre-events
+%MSG-i DDLParser:  25-Jul-2006 18:11:26 CDT pre-events
 Start Parsing.  Validation is set off for the time being.
 Element: Constant (64)
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HVQF
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HVQF
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HVQX
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HVQX
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 =========>
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 DC: Exception:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 SpecPar will be ignored for the following selection-std::string:
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HFFibre.*
-%MSG-e Specific:  26-Jun-2006 23:25:18 CDT pre-events
+%MSG-e Specific:  25-Jul-2006 18:11:30 CDT pre-events
 //HFFibre.*
 
 *************************************************************
@@ -96,210 +96,310 @@ alpha=-79.9999
      (           0             0             1) ]
 
 trans=(81458.4,0,0)
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter::upDate() starts
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive CALO Class Name CaloTrkProcessing ROU Name CaloHitsTk
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_1_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_2_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_3_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_4_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_5_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_6_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_7_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_8_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_9_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_10_E1AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_11_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_12_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_13_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_14_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_15_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_16_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_17_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_18_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_19_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_20_E2AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_21_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_22_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_23_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_24_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_25_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_26_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_27_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_28_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_29_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_30_E3AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_31_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_32_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_33_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_34_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_35_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_36_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_37_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_38_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_39_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_40_E4AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_41_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_42_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_43_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_44_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_45_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_46_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_47_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_48_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_49_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_50_E5AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_51_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_52_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_53_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_54_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_55_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_56_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_57_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_58_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_59_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_60_E6AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_61_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_62_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_63_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_64_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_65_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_66_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_67_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_68_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_69_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_70_E7AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_71_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_72_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_73_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_74_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_75_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_76_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_77_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_78_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_79_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_80_E8AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_81_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_82_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_83_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_84_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_85_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_86_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_87_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_88_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_89_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_90_E9AL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_91_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_92_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_93_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_94_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_95_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_96_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_97_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
-%MSG-i SimG4CoreGeometry:  26-Jun-2006 23:25:21 CDT pre-events
+%MSG-i SimG4CoreGeometry:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:34 CDT 
+       pre-events
  DDG4SensitiveConverter: Sensitive EBRY_98_EJAL Class Name EcalSensitiveDetector ROU Name EcalHitsEB
  World volume defined 
 Creating a new Timing Report
-StopWatch bias 5.01704e-09
-CPUWatch bias 0.000126
+StopWatch bias 5.01649e-09
+CPUWatch bias 0.00014
 
          ___________________________________        
       .-'                                   '-.     
@@ -312,64 +412,69 @@ CPUWatch bias 0.000126
       `-.___________________________________.-'     
 
 B-field(T) at (0,0,0)(cm):  (9.08977e-22,-9.09131e-22,4.06811) 
-%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i SimG4CoreSensitiveDetector:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:37 CDT pre-events
  AttachSD: trying to find something for CaloTrkProcessing CaloHitsTk
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 CaloTrkProcessing: Initailised with TestBeam = 0 Emin = 0.01 MeV
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 CaloTrkProcessing: Names for Calorimeter:
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
  (0) CALO
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
  (1) VCAL
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 CaloTrkProcessing: Names for Inside:
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
  (0) BEAM
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
  (1) Tracker
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
  (2) NotFound
-%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i SimG4CoreSensitiveDetector:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:37 CDT pre-events
  AttachSD: trying to find something for EcalSensitiveDetector EcalHitsEB
-%MSG-i CaloSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 CaloSD: Minimum energy of track for saving it 1 GeV
         Use of HitID Map 1
         Check last 25 before saving the hit
-%MSG-i EcalGeom:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i EcalGeom:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 Creating EcalBarrelNumberingScheme
-%MSG-i EcalSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 EcalSD: updates numbering scheme for EcalHitsEB
 
-%MSG-i EcalSim:  26-Jun-2006 23:25:23 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:37 CDT pre-events
 ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
-%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 23:25:24 CDT pre-events
+%MSG-i SimG4CoreSensitiveDetector:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:38 CDT pre-events
  AttachSD: trying to find something for EcalSensitiveDetector EcalHitsEE
-%MSG-i CaloSim:  26-Jun-2006 23:25:24 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:38 CDT pre-events
 CaloSD: Minimum energy of track for saving it 1 GeV
         Use of HitID Map 1
         Check last 25 before saving the hit
-%MSG-i EcalGeom:  26-Jun-2006 23:25:24 CDT pre-events
+%MSG-i EcalGeom:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:38 CDT pre-events
 Creating EcalEndcapNumberingScheme
-%MSG-i EcalSim:  26-Jun-2006 23:25:24 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:38 CDT pre-events
 EcalSD: updates numbering scheme for EcalHitsEE
 
-%MSG-i EcalSim:  26-Jun-2006 23:25:24 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:38 CDT pre-events
 ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
-%MSG-i SimG4CoreSensitiveDetector:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i SimG4CoreSensitiveDetector:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:39 CDT pre-events
  AttachSD: trying to find something for EcalSensitiveDetector EcalHitsES
-%MSG-i CaloSim:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i CaloSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:39 CDT pre-events
 CaloSD: Minimum energy of track for saving it 1 GeV
         Use of HitID Map 1
         Check last 25 before saving the hit
-%MSG-i EcalGeom:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i EcalGeom:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:39 CDT pre-events
 Creating ShowerForwardNumberingScheme
-%MSG-i EcalSim:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:39 CDT pre-events
 EcalSD: updates numbering scheme for EcalHitsES
 
-%MSG-i EcalSim:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i EcalSim:  PoolOutputModule:o1{ctor} 25-Jul-2006 18:11:39 CDT pre-events
 ECalSD:: Use of Birks law is set to      0        with the two constants C1 = 8.11396e+17, C2 = 3.73981e+34
-%MSG-i SimG4CoreApplication:  26-Jun-2006 23:25:25 CDT pre-events
+%MSG-i SimG4CoreApplication:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:39 CDT pre-events
  RunManager: Sensitive Detector building finished; found 0 Tk type Producers, and 4 Calo type producers 
  Generator constructed 
 
@@ -490,166 +595,254 @@ muPairProd:   tables are built for  mu-
 msc:  Model variant of multiple scattering for pi-
       Lambda tables from 100 eV  to 100 TeV in 120 bins.
       Boundary algorithm is active with facrange= 0.199
-%MSG-i SimG4CoreApplication:  26-Jun-2006 23:25:47 CDT pre-events
+%MSG-i SimG4CoreApplication:  PoolOutputModule:o1{ctor} 
+       25-Jul-2006 18:11:59 CDT pre-events
  RunManager: user StackingAction overridden 
-file:simhitoutput.root: level[Always] Root file version:51102
-%MSG-i FwkReport:  26-Jun-2006 23:25:50 CDT BeforeEvents
+file:simhitoutput.root: level[Always] Root file version:51200
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 18:12:05 CDT BeforeEvents
 Begin processing the 1th record. Run 1, Event 1
-%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:25:51 CDT 1/1
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:12:06 CDT 
+       Run: 1 Event: 1
 CaloMap: Initialised
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       26-Jun-2006 23:25:51 CDT 1/1
+       25-Jul-2006 18:12:17 CDT Run: 1 Event: 1
  RunManager: saved : Event  1 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 26-Jun-2006 23:25:52 CDT BetweenEvents
-Begin processing the 2th record. Run 1, Event 2
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:28:22 CDT 1/25
-CaloSD: Problem with primaryID **** set by force to TkID **** 11265
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:28:22 CDT 1/25
-CaloSD: Problem with primaryID **** set by force to TkID **** 11265
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:28:22 CDT 1/25
-CaloSD: Problem with primaryID **** set by force to TkID **** 11268
-%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:31:22 CDT 1/67
-CaloSD: EcalHitsEB store 709 hits out of 709 recorded with 0 track IDs not given properly
-%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:32:47 CDT 1/100
-CaloSD: EcalHitsEE store 9 hits out of 9 recorded with 0 track IDs not given properly
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:33:37 CDT 1/117
-CaloSD: Problem with primaryID **** set by force to TkID **** 36222
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:33:37 CDT 1/117
-CaloSD: Problem with primaryID **** set by force to TkID **** 36225
-%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:37:52 CDT 1/167
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:17:39 CDT 
+       Run: 1 Event: 67
+CaloSD: EcalHitsEB store 452 hits out of 452 recorded with 0 track IDs not given properly
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:18:40 CDT 
+       Run: 1 Event: 84
+CaloSD: Problem with primaryID **** set by force to TkID **** 55519
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:18:40 CDT 
+       Run: 1 Event: 84
+CaloSD: Problem with primaryID **** set by force to TkID **** 55519
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:18:40 CDT 
+       Run: 1 Event: 84
+CaloSD: Problem with primaryID **** set by force to TkID **** 55522
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:19:40 CDT 
+       Run: 1 Event: 100
+CaloSD: EcalHitsEE store 181 hits out of 181 recorded with 0 track IDs not given properly
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:23:32 CDT 
+       Run: 1 Event: 167
 CaloSD: EcalHitsEB store 0 hits out of 0 recorded with 0 track IDs not given properly
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:38:18 CDT 1/173
-CaloSD: Problem with primaryID **** set by force to TkID **** 51547
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:38:18 CDT 1/173
-CaloSD: Problem with primaryID **** set by force to TkID **** 51553
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176124
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176131
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176130
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176129
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176128
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176127
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:24:38 CDT 
+       Run: 1 Event: 188
+CaloSD: Problem with primaryID **** set by force to TkID **** 176126
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 18:25:42 CDT Run: 1 Event: 199
+Begin processing the 200th record. Run 1, Event 200
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       26-Jun-2006 23:39:41 CDT 1/200
+       25-Jul-2006 18:25:45 CDT Run: 1 Event: 200
  RunManager: saved : Event  200 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 26-Jun-2006 23:39:41 CDT BetweenEvents
-Begin processing the 201th record. Run 1, Event 201
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:43:01 CDT 1/248
-CaloSD: Problem with primaryID **** set by force to TkID **** 181103
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:43:01 CDT 1/248
-CaloSD: Problem with primaryID **** set by force to TkID **** 181108
-%MSG-i CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:46:15 CDT 1/300
-CaloSD: EcalHitsEE store 526 hits out of 526 recorded with 0 track IDs not given properly
+WARNING - G4Navigator::ComputeStep()
+          Track stuck, not moving for 10 steps
+          in volume -E3CN- at point (1376.899458,-216.5264424,-1946.891458)
+          direction: (-0.5577697932,-0.2743812431,-0.7833312143).
+          Potential geometry or navigation problem !
+          Trying pushing it of 9e-10 mm ...
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 18:32:22 CDT Run: 1 Event: 299
+Begin processing the 300th record. Run 1, Event 300
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:32:28 CDT 
+       Run: 1 Event: 300
+CaloSD: EcalHitsEE store 585 hits out of 585 recorded with 0 track IDs not given properly
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       26-Jun-2006 23:46:15 CDT 1/300
+       25-Jul-2006 18:32:28 CDT Run: 1 Event: 300
  RunManager: saved : Event  300 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 26-Jun-2006 23:46:15 CDT BetweenEvents
-Begin processing the 301th record. Run 1, Event 301
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:48:27 CDT 1/333
-CaloSD: Problem with primaryID **** set by force to TkID **** 160705
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:48:27 CDT 1/333
-CaloSD: Problem with primaryID **** set by force to TkID **** 160705
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:48:27 CDT 1/333
-CaloSD: Problem with primaryID **** set by force to TkID **** 160708
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:48:27 CDT 1/333
-CaloSD: Problem with primaryID **** set by force to TkID **** 160707
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:49:11 CDT 1/355
-CaloSD: Problem with primaryID **** set by force to TkID **** 14619
-%MSG-w CaloSim:  OscarProducer:SimG4Object 26-Jun-2006 23:49:11 CDT 1/355
-CaloSD: Problem with primaryID **** set by force to TkID **** 14622
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 18:42:59 CDT Run: 1 Event: 499
+Begin processing the 500th record. Run 1, Event 500
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       27-Jun-2006 00:00:03 CDT 1/500
+       25-Jul-2006 18:43:02 CDT Run: 1 Event: 500
  RunManager: saved : Event  500 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 27-Jun-2006 00:00:03 CDT BetweenEvents
-Begin processing the 501th record. Run 1, Event 501
-%MSG-i CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:06:26 CDT 1/567
-CaloSD: EcalHitsEB store 72 hits out of 72 recorded with 0 track IDs not given properly
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:47:40 CDT 
+       Run: 1 Event: 567
+CaloSD: EcalHitsEB store 39 hits out of 39 recorded with 0 track IDs not given properly
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:48:37 CDT 
+       Run: 1 Event: 577
+CaloSD: Problem with primaryID **** set by force to TkID **** 12342
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:48:37 CDT 
+       Run: 1 Event: 577
+CaloSD: Problem with primaryID **** set by force to TkID **** 12344
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:53:03 CDT 
+       Run: 1 Event: 637
+CaloSD: Problem with primaryID **** set by force to TkID **** 24513
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 18:53:03 CDT 
+       Run: 1 Event: 637
+CaloSD: Problem with primaryID **** set by force to TkID **** 24516
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:01:36 CDT 
+       Run: 1 Event: 751
+CaloSD: Problem with primaryID **** set by force to TkID **** 53202
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:01:36 CDT 
+       Run: 1 Event: 751
+CaloSD: Problem with primaryID **** set by force to TkID **** 53206
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 19:13:07 CDT Run: 1 Event: 899
+Begin processing the 900th record. Run 1, Event 900
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       27-Jun-2006 00:30:06 CDT 1/900
+       25-Jul-2006 19:13:09 CDT Run: 1 Event: 900
  RunManager: saved : Event  900 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 27-Jun-2006 00:30:06 CDT BetweenEvents
-Begin processing the 901th record. Run 1, Event 901
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29372
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29372
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29372
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29376
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29375
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:31:31 CDT 1/921
-CaloSD: Problem with primaryID **** set by force to TkID **** 29374
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:35:29 CDT 1/966
-CaloSD: Problem with primaryID **** set by force to TkID **** 118714
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:35:29 CDT 1/966
-CaloSD: Problem with primaryID **** set by force to TkID **** 118721
-%MSG-i CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:47:38 CDT 1/1100
-CaloSD: EcalHitsEE store 1659 hits out of 1659 recorded with 0 track IDs not given properly
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:47:55 CDT 1/1104
-CaloSD: Problem with primaryID **** set by force to TkID **** 60859
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 00:47:55 CDT 1/1104
-CaloSD: Problem with primaryID **** set by force to TkID **** 60862
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:00:16 CDT 1/1266
-CaloSD: Problem with primaryID **** set by force to TkID **** 75185
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:00:16 CDT 1/1266
-CaloSD: Problem with primaryID **** set by force to TkID **** 75185
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:00:16 CDT 1/1266
-CaloSD: Problem with primaryID **** set by force to TkID **** 75188
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:00:16 CDT 1/1266
-CaloSD: Problem with primaryID **** set by force to TkID **** 75187
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:05:34 CDT 1/1310
-CaloSD: Problem with primaryID **** set by force to TkID **** 92041
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:05:34 CDT 1/1310
-CaloSD: Problem with primaryID **** set by force to TkID **** 92044
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:13:36 CDT 1/1409
-CaloSD: Problem with primaryID **** set by force to TkID **** 50004
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:13:36 CDT 1/1409
-CaloSD: Problem with primaryID **** set by force to TkID **** 50006
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:21:26 CDT 1/1547
-CaloSD: Problem with primaryID **** set by force to TkID **** 11842
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:21:26 CDT 1/1547
-CaloSD: Problem with primaryID **** set by force to TkID **** 11847
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:22:05 CDT 1/1562
-CaloSD: Problem with primaryID **** set by force to TkID **** 207091
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:22:05 CDT 1/1562
-CaloSD: Problem with primaryID **** set by force to TkID **** 207094
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
-%MSG-w CaloSim:  OscarProducer:SimG4Object 27-Jun-2006 01:29:32 CDT 1/1650
-CaloSD: Problem with primaryID **** set by force to TkID **** 360902
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:23:14 CDT 
+       Run: 1 Event: 1057
+CaloSD: Problem with primaryID **** set by force to TkID **** 8768
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:23:14 CDT 
+       Run: 1 Event: 1057
+CaloSD: Problem with primaryID **** set by force to TkID **** 8772
+%MSG-i CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:26:25 CDT 
+       Run: 1 Event: 1100
+CaloSD: EcalHitsEE store 3 hits out of 3 recorded with 0 track IDs not given properly
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:31:43 CDT 
+       Run: 1 Event: 1168
+CaloSD: Problem with primaryID **** set by force to TkID **** 121824
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:31:43 CDT 
+       Run: 1 Event: 1168
+CaloSD: Problem with primaryID **** set by force to TkID **** 121830
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:34:45 CDT 
+       Run: 1 Event: 1234
+CaloSD: Problem with primaryID **** set by force to TkID **** 11591
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:34:45 CDT 
+       Run: 1 Event: 1234
+CaloSD: Problem with primaryID **** set by force to TkID **** 11594
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33536
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33536
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33536
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33567
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33566
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33565
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33564
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33563
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33562
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33561
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33560
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33559
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33558
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33557
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33556
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:42:22 CDT 
+       Run: 1 Event: 1313
+CaloSD: Problem with primaryID **** set by force to TkID **** 33555
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:49:56 CDT 
+       Run: 1 Event: 1420
+CaloSD: Problem with primaryID **** set by force to TkID **** 32969
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 19:49:56 CDT 
+       Run: 1 Event: 1420
+CaloSD: Problem with primaryID **** set by force to TkID **** 32976
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:07:46 CDT 
+       Run: 1 Event: 1661
+CaloSD: Problem with primaryID **** set by force to TkID **** 104
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:07:46 CDT 
+       Run: 1 Event: 1661
+CaloSD: Problem with primaryID **** set by force to TkID **** 104
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:07:46 CDT 
+       Run: 1 Event: 1661
+CaloSD: Problem with primaryID **** set by force to TkID **** 104
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:07:46 CDT 
+       Run: 1 Event: 1661
+CaloSD: Problem with primaryID **** set by force to TkID **** 104
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:07:46 CDT 
+       Run: 1 Event: 1661
+CaloSD: Problem with primaryID **** set by force to TkID **** 104
+%MSG-i FwkReport:  main_input:source 25-Jul-2006 20:11:11 CDT Run: 1 Event: 1699
+Begin processing the 1700th record. Run 1, Event 1700
 %MSG-i SimG4CoreApplication:  OscarProducer:SimG4Object 
-       27-Jun-2006 01:33:01 CDT 1/1700
+       25-Jul-2006 20:11:11 CDT Run: 1 Event: 1700
  RunManager: saved : Event  1700 of weight 0 with 1 tracks and 1 vertices, generated by 1 particles 
-%MSG-i FwkReport:  BetweenModules 27-Jun-2006 01:33:01 CDT BetweenEvents
-Begin processing the 1701th record. Run 1, Event 1701
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:17:12 CDT 
+       Run: 1 Event: 1772
+CaloSD: Problem with primaryID **** set by force to TkID **** 35959
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:17:12 CDT 
+       Run: 1 Event: 1772
+CaloSD: Problem with primaryID **** set by force to TkID **** 35963
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:20:56 CDT 
+       Run: 1 Event: 1821
+CaloSD: Problem with primaryID **** set by force to TkID **** 149733
+%MSG-w CaloSim:  OscarProducer:SimG4Object 25-Jul-2006 20:20:56 CDT 
+       Run: 1 Event: 1821
+CaloSD: Problem with primaryID **** set by force to TkID **** 149738
  OscarProducer terminating 
-%MSG-i EcalGeom:  BetweenModules 27-Jun-2006 01:52:56 CDT BetweenEvents
+%MSG-i EcalGeom:  PostSource 25-Jul-2006 20:34:32 CDT Run: 1 Event: 2000
 Deleting EcalBarrelNumberingScheme
 
-Main Thread CPU elapsed time 880348u 458s
+Main Thread CPU elapsed time 849084u 413s
   *******************************************
   *                                         *
   *        W E L C O M E  to  R O O T       *
   *                                         *
-  *   Version   5.11/02     19 April 2006   *
+  *   Version   5.12/00      10 July 2006   *
   *                                         *
   *  You are welcome to visit our Web site  *
   *          http://root.cern.ch            *
   *                                         *
   *******************************************
 
-Compiled on 19 April 2006 for linux with thread support.
+Compiled on 14 July 2006 for linux with thread support.
 
-CINT/ROOT C/C++ Interpreter version 5.16.11, April 14, 2006
+CINT/ROOT C/C++ Interpreter version 5.16.13, June 8, 2006
 Type ? for help. Commands must be C++ statements.
 Enclose multiple statements between { }.
 Loading FWLite...
@@ -661,91 +854,91 @@ Histogram file created!!
   *                                         *
   *        W E L C O M E  to  R O O T       *
   *                                         *
-  *   Version   5.11/02     19 April 2006   *
+  *   Version   5.12/00      10 July 2006   *
   *                                         *
   *  You are welcome to visit our Web site  *
   *          http://root.cern.ch            *
   *                                         *
   *******************************************
 
-Compiled on 19 April 2006 for linux with thread support.
+Compiled on 14 July 2006 for linux with thread support.
 
-CINT/ROOT C/C++ Interpreter version 5.16.11, April 14, 2006
+CINT/ROOT C/C++ Interpreter version 5.16.13, June 8, 2006
 Type ? for help. Commands must be C++ statements.
 Enclose multiple statements between { }.
 Loading FWLite...
 
 Processing DoCompare.C("Pion")...
 Initializing HistoCompare... 
-(class HistoCompare)154357672
-Initializing HistoCompare...
-[OVAL]  PV = 1 of Barrel_E1x1 distribution.
+(class HistoCompare)163746064
+Initializing HistoCompare... 
+[OVAL] Barrel_E1x1 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E1x1.eps has been created
-[OVAL]  PV = 1 of Barrel_E2x2 distribution.
+[OVAL] Barrel_E2x2 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E2x2.eps has been created
-[OVAL]  PV = 1 of Barrel_E3x3 distribution.
+[OVAL] Barrel_E3x3 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E3x3.eps has been created
-[OVAL]  PV = 1 of Barrel_E4x4 distribution.
+[OVAL] Barrel_E4x4 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E4x4.eps has been created
-[OVAL]  PV = 1 of Barrel_E5x5 distribution.
+[OVAL] Barrel_E5x5 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E5x5.eps has been created
-[OVAL]  PV = 1 of Barrel_E1OverE4 distribution.
+[OVAL] Barrel_E1OverE4 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E1OverE4.eps has been created
-[OVAL]  PV = 1 of Barrel_E4OverE9 distribution.
+[OVAL] Barrel_E4OverE9 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E4OverE9.eps has been created
-[OVAL]  PV = 1 of Barrel_E9OverE16 distribution.
+[OVAL] Barrel_E9OverE16 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E9OverE16.eps has been created
-[OVAL]  PV = 1 of Barrel_E16OverE25 distribution.
+[OVAL] Barrel_E16OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E16OverE25.eps has been created
-[OVAL]  PV = 1 of Barrel_E1OverE25 distribution.
+[OVAL] Barrel_E1OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E1OverE25.eps has been created
-[OVAL]  PV = 1 of Barrel_E9OverE25 distribution.
+[OVAL] Barrel_E9OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionBarrel_E9OverE25.eps has been created
-[OVAL]  PV = 1 of Ecal_EBOverETotal distribution.
+[OVAL] Ecal_EBOverETotal PV= 1
 Info in <TCanvas::Print>: eps file PionEcal_EBOverETotal.eps has been created
-[OVAL]  PV = 1 of Ecal_EEOverETotal distribution.
+[OVAL] Ecal_EEOverETotal PV= 1
 Info in <TCanvas::Print>: eps file PionEcal_EEOverETotal.eps has been created
-[OVAL]  PV = 1 of Ecal_EPOverETotal distribution.
+[OVAL] Ecal_EPOverETotal PV= 1
 Info in <TCanvas::Print>: eps file PionEcal_EPOverETotal.eps has been created
-[OVAL]  PV = 1 of Ecal_EBEEEPOverETotal distribution.
+[OVAL] Ecal_EBEEEPOverETotal PV= 1
 Info in <TCanvas::Print>: eps file PionEcal_EBEEEPOverETotal.eps has been created
-[OVAL]  PV = 1 of PreShower_EHit_L1zp distribution.
+[OVAL] PreShower_EHit_L1zp PV= 1
 Info in <TCanvas::Print>: eps file PionPreShower_EHit_L1zp.eps has been created
-[OVAL]  PV = 1 of PreShower_EHit_L2zp distribution.
+[OVAL] PreShower_EHit_L2zp PV= 1
 Info in <TCanvas::Print>: eps file PionPreShower_EHit_L2zp.eps has been created
-[OVAL]  PV = 1 of Preshower_NHit_L1zp distribution.
+[OVAL] Preshower_NHit_L1zp PV= 1
 Info in <TCanvas::Print>: eps file PionPreshower_NHit_L1zp.eps has been created
-[OVAL]  PV = 1 of Preshower_NHit_L2zp distribution.
+[OVAL] Preshower_NHit_L2zp PV= 1
 Info in <TCanvas::Print>: eps file PionPreshower_NHit_L2zp.eps has been created
-[OVAL]  PV = 1 of Endcap_E1x1 distribution.
+[OVAL] Endcap_E1x1 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E1x1.eps has been created
-[OVAL]  PV = 1 of Endcap_E2x2 distribution.
+[OVAL] Endcap_E2x2 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E2x2.eps has been created
-[OVAL]  PV = 1 of Endcap_E3x3 distribution.
+[OVAL] Endcap_E3x3 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E3x3.eps has been created
-[OVAL]  PV = 1 of Endcap_E4x4 distribution.
+[OVAL] Endcap_E4x4 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E4x4.eps has been created
-[OVAL]  PV = 1 of Endcap_E5x5 distribution.
+[OVAL] Endcap_E5x5 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E5x5.eps has been created
-[OVAL]  PV = 1 of Endcap_E1OverE4 distribution.
+[OVAL] Endcap_E1OverE4 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E1OverE4.eps has been created
-[OVAL]  PV = 1 of Endcap_E4OverE9 distribution.
+[OVAL] Endcap_E4OverE9 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E4OverE9.eps has been created
-[OVAL]  PV = 1 of Endcap_E9OverE16 distribution.
+[OVAL] Endcap_E9OverE16 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E9OverE16.eps has been created
-[OVAL]  PV = 1 of Endcap_E16OverE25 distribution.
+[OVAL] Endcap_E16OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E16OverE25.eps has been created
-[OVAL]  PV = 1 of Endcap_E1OverE25 distribution.
+[OVAL] Endcap_E1OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E1OverE25.eps has been created
-[OVAL]  PV = 1 of Endcap_E9OverE25 distribution.
+[OVAL] Endcap_E9OverE25 PV= 1
 Info in <TCanvas::Print>: eps file PionEndcap_E9OverE25.eps has been created
-[OVAL]  PV = 1 of PreShower_EHit_L1zm distribution.
+[OVAL] PreShower_EHit_L1zm PV= 1
 Info in <TCanvas::Print>: eps file PionPreShower_EHit_L1zm.eps has been created
-[OVAL]  PV = 1 of PreShower_EHit_L2zm distribution.
+[OVAL] PreShower_EHit_L2zm PV= 1
 Info in <TCanvas::Print>: eps file PionPreShower_EHit_L2zm.eps has been created
-[OVAL]  PV = 1 of Preshower_NHit_L1zm distribution.
+[OVAL] Preshower_NHit_L1zm PV= 1
 Info in <TCanvas::Print>: eps file PionPreshower_NHit_L1zm.eps has been created
-[OVAL]  PV = 1 of Preshower_NHit_L2zm distribution.
+[OVAL] Preshower_NHit_L2zm PV= 1
 Info in <TCanvas::Print>: eps file PionPreshower_NHit_L2zm.eps has been created
 [OVAL] Barrel_Longitudinal PV = 1
 Info in <TCanvas::Print>: eps file PionBarrel_Longitudinal.eps has been created
@@ -755,11 +948,7 @@ Info in <TCanvas::Print>: eps file PionBarrel_Occupancy.eps has been created
 Info in <TCanvas::Print>: eps file PionEndcap_Longitudinal.eps has been created
 [OVAL] Endcap_Occupancy PV = 1
 Info in <TCanvas::Print>: eps file PionEndcap_Occupancy.eps has been created
-Error in <TProfile::Chi2Test>: bins with non-zero content and zero error
-[OVAL] Preshower_EEOverES_zp PV = 0
 Info in <TCanvas::Print>: eps file PionPreshower_EEOverES_zp.eps has been created
-Error in <TProfile::Chi2Test>: bins with non-zero content and zero error
-[OVAL] Preshower_EEOverES_zm PV = 0
 Info in <TCanvas::Print>: eps file PionPreshower_EEOverES_zm.eps has been created
 
 [oval run] ==========================================
