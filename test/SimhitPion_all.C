@@ -11,7 +11,7 @@ void SimhitPion_all()
  TFile * file = new TFile(filename);
  TTree * events = dynamic_cast<TTree*>(file->Get("Events"));
  assert(events != 0);
- TBranch * branch = events->GetBranch( "PEcalValidInfo_SimG4Object_EcalValidInfo_EcalHitsValid.obj");
+ TBranch * branch = events->GetBranch( "PEcalValidInfo_g4SimHits_EcalValidInfo_EcalHitsValid.obj");
  assert(branch != 0);
  int nev = events->GetEntries();
 
