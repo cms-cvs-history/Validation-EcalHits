@@ -4,11 +4,12 @@
 #include "TH2F.h"
 #include "TH2F.h"
 
-void Simhit30GeV_Endcap()
+void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
+                        TString outputfile="EcalSimHitHisto_30GeV_Endcap.root")
 {
- char* filename ="simhitoutput.root";
+// char* filename ="simhitoutput.root";
  char * treename="Events";
- TFile * file = new TFile(filename);
+ TFile * file = new TFile(inputfile);
  TTree * events = dynamic_cast<TTree*>(file->Get("Events"));
  assert(events != 0);
  TBranch * branch = events->GetBranch( "PEcalValidInfo_g4SimHits_EcalValidInfo_EcalHitsValid.obj");
@@ -211,8 +212,8 @@ void Simhit30GeV_Endcap()
 
  cout<<"Total E = "<<TotalE<<endl;
 
- TFile OutFile("EcalSimHitHisto_30GeV_Endcap.root","RECREATE") ;
-
+// TFile OutFile("EcalSimHitHisto_30GeV_Endcap.root","RECREATE") ;
+  TFile OutFile(outputfile,"RECREATE") ;
   for ( int ih  =0; ih < NHisto;  ih++ )  { h1[ih] ->Write(); }
   for ( int ih2 =0; ih2< NHisto2; ih2++ ) { h2[ih2]->Write(); }
   for ( int ih3 =0; ih3< NHisto3; ih3++ ) { pro[ih3] ->Write(); }
