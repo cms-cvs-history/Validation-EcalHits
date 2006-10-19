@@ -23,7 +23,7 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 34; 
+ static const int NHisto = 43; 
  char* label[NHisto];
  
  label[0] = "Barrel_E1x1";
@@ -60,6 +60,15 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
  label[31] = "PreShower_EHit_L2zm";
  label[32] = "Preshower_NHit_L1zm";
  label[33] = "Preshower_NHit_L2zm";
+ label[34] = "Barrel_HitMultiplicity";
+ label[35] = "Barrel_HitEnergy";
+ label[36] = "Barrel_CryMultiplicity";
+ label[37] = "EndcapZPlus_HitMultiplicity";
+ label[38] = "EndcapZPlus_HitEnergy";
+ label[39] = "EndcapZPlus_CryMultiplicity";
+ label[40] = "EndcapZMinus_HitMultiplicity";
+ label[41] = "EndcapZMinus_HitEnergy";
+ label[42] = "EndcapZMinus_CryMultiplicity";
 
 
 
@@ -107,9 +116,24 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
  h1[32] = new TH1F(label[32], "Multiplicity of the 1st Layer",50, 0, 40);
  h1[33] = new TH1F(label[33], "Multiplicity of the 2nd Layer",50, 0, 40);
 
+ h1[34] = new TH1F(label[34], "Barrel Hit Multiplicity",30, 0, 1200);
+ h1[35] = new TH1F(label[35], "Barrel Hit Energy Spectrum",40, 0, 40000);
+ h1[36] = new TH1F(label[36], "Barrel Crystal Multiplicity",30, 0, 1200);
+
+ h1[37] = new TH1F(label[37], "Endcap Zplus Hit Multiplicity",30, 0, 1200);
+ h1[38] = new TH1F(label[38], "Endcap Zplus Hit Energy Spectrum",40, 0, 40000);
+ h1[39] = new TH1F(label[39], "Endcap Zplus Crystal Multiplicity",30, 0, 1200);
+
+ h1[40] = new TH1F(label[40], "Endcap Zminus Hit Multiplicity",30, 0, 1200);
+ h1[41] = new TH1F(label[41], "Endcap Zminus Hit Energy Spectrum",40, 0, 40000);
+ h1[42] = new TH1F(label[42], "Endcap Zminus Crystal Multiplicity",30, 0, 1200);
+
+
 
 
  float  ebcluster[5];
+ int nhiteb, ncrystalofeb;
+ std::vector<float>  ehiteb;
 
  for (Int_t i=0;i<nev;i++) {
     branch -> GetEntry(i);
@@ -129,6 +153,18 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
          h1[9] ->Fill(ebcluster[0]/ebcluster[4]);
          h1[10]->Fill(ebcluster[2]/ebcluster[4]);
     }
+
+   nhiteb = EcalInfo.hitsInEB();
+    ehiteb = EcalInfo.eOfEBHits();
+    h1[34] ->Fill(nhiteb);
+    for ( int m=0; m<nhiteb;m++) {
+      h1[35]->Fill(ehiteb[m]);
+    }
+
+    ncrystalofeb = EcalInfo.crystalInEB();
+    h1[36]->Fill(ncrystalofeb);
+
+
  }
 
  float ee,be, se, pe;
@@ -181,6 +217,10 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
 
  //Transvers Profiles in Endcap
  float  eecluster[5];
+ std::vector<float>  ehiteezp;
+ std::vector<float>  ehiteezm;
+ int nhiteezp, nhiteezm;
+ int ncryeezp, ncryeezm;
 
  for (Int_t i=0;i<nev;i++) {
     branch -> GetEntry(i);
@@ -200,6 +240,25 @@ void SimhitPion_all(TString inputfile="simhitoutput.root",
          h1[28] ->Fill(eecluster[0]/eecluster[4]);
          h1[29]->Fill(eecluster[2]/eecluster[4]);
     }
+    ehiteezp = EcalInfo.eOfEEPlusHits();
+    ehiteezm = EcalInfo.eOfEEMinusHits();
+    ncryeezp = EcalInfo.crystalInEEzp();
+    ncryeezm = EcalInfo.crystalInEEzm();
+    nhiteezp = ehiteezp.size();
+    nhiteezm = ehiteezm.size();
+    h1[37] -> Fill( nhiteezp );
+    for ( int n=0; n<nhiteezp; n++) {
+       h1[38] -> Fill ( ehiteezp[n] );
+    }
+    h1[39] -> Fill( ncryeezp );
+
+    h1[40] -> Fill( nhiteezm );
+    for ( int n=0; n<nhiteezm; n++) {
+       h1[41] -> Fill ( ehiteezm[n] );
+    }
+    h1[42] -> Fill( ncryeezm );
+
+
  }
 
  //2-Dimention Histograms

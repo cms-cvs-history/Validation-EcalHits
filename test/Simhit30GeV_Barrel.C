@@ -23,7 +23,7 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 12; 
+ static const int NHisto = 15; 
  char* label[NHisto];
  
  label[0] = "Barrel_E1x1";
@@ -38,6 +38,9 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
  label[9] = "Barrel_E1OverE25";
  label[10] = "Barrel_E9OverE25";
  label[11] = "Ecal_EBOverETotal";
+ label[12] = "Barrel_HitMultiplicity";
+ label[13] = "Barrel_HitEnergy";
+ label[14] = "Barrel_CryMultiplicity";
 
 
  TH1F * h1[NHisto];
@@ -57,8 +60,14 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
 
  h1[11] = new TH1F(label[11],"#frac{E_{Barrel}}{E_{Inci}}", 100 , 0.8 , 1.02);
 
+ h1[12] = new TH1F(label[12], "Barrel Hit Multiplicity",50, 0, 600);
+ h1[13] = new TH1F(label[13], "Barrel Hit Energy Spectrum",50, 0, 30000);
+ h1[14] = new TH1F(label[14], "Barrel Crystal Multiplicity",50, 0, 300);
+
 
  float  ebcluster[5];
+ int nhiteb, ncrystalofeb;
+ std::vector<float>  ehiteb;
 
  for (Int_t i=0;i<nev;i++) {
     branch -> GetEntry(i);
@@ -78,6 +87,17 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
          h1[9] ->Fill(ebcluster[0]/ebcluster[4]);
          h1[10]->Fill(ebcluster[2]/ebcluster[4]);
     }
+    nhiteb = EcalInfo.hitsInEB();
+    ehiteb = EcalInfo.eOfEBHits();
+    h1[12] ->Fill(nhiteb);
+    for ( int m=0; m<nhiteb;m++) {
+      h1[13]->Fill(ehiteb[m]);
+    }
+
+    ncrystalofeb = EcalInfo.crystalInEB();
+    h1[14]->Fill(ncrystalofeb);
+
+
  }
 
  float ee,be, se, pe;

@@ -23,7 +23,7 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 20; 
+ static const int NHisto = 23; 
  char* label[NHisto];
  
  label[0] = "Ecal_EEOverETotal";
@@ -46,6 +46,9 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
  label[17] = "Endcap_E9OverE25";
  label[18] = "Preshower_E1alphaE2_zp";
  label[19] = "Preshower_E2OverE1_zp";
+ label[20] = "EndcapZPlus_HitMultiplicity";
+ label[21] = "EndcapZPlus_HitEnergy";
+ label[22] = "EndcapZPlus_CryMultiplicity";
 
 
  TH1F * h1[NHisto];
@@ -74,6 +77,12 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
  h1[17] = new TH1F(label[17] ,"E9/E25"  ,100, 0.4, 1.1);
  h1[18] = new TH1F(label[18], "(E1+ 0.7*E2) in ZPlus",30, 0, 50);
  h1[19] = new TH1F(label[19], "E2/E1 in ZPlus",50, 0, 10);
+
+ h1[20] = new TH1F(label[20], "Endcap Zplus Hit Multiplicity",50, 0, 600);
+ h1[21] = new TH1F(label[21], "Endcap Zplus Hit Energy Spectrum",50, 0, 30000);
+ h1[22] = new TH1F(label[22], "Endcap Zplus Crystal Multiplicity",50, 0, 300);
+
+
 
  float ee,be, se, pe;
  for ( int j = 0; j < nev; j++){
@@ -109,6 +118,9 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
 
  //Transvers Profiles in Endcap
  float  eecluster[5];
+ std::vector<float>  ehiteezp;
+ int nhiteezp;
+ int ncryeezp;
 
  for (Int_t i=0;i<nev;i++) {
     branch -> GetEntry(i);
@@ -128,6 +140,18 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
          h1[16] ->Fill(eecluster[0]/eecluster[4]);
          h1[17]->Fill(eecluster[2]/eecluster[4]);
     }
+    
+    ehiteezp = EcalInfo.eOfEEPlusHits();
+    ncryeezp = EcalInfo.crystalInEEzp();
+    nhiteezp = ehiteezp.size();
+    h1[20] -> Fill( nhiteezp );
+    for ( int n=0; n<nhiteezp; n++) {
+       h1[21] -> Fill ( ehiteezp[n] );
+    }
+    h1[22] -> Fill( ncryeezp );
+
+
+
  }
 
  //2-Dimention Histograms
