@@ -23,7 +23,7 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 15; 
+ const int NHisto = 15; 
  char* label[NHisto];
  
  label[0] = "Barrel_E1x1";
@@ -112,7 +112,7 @@ void Simhit30GeV_Barrel( TString inputfile="simhitoutput.root"
  }
 
  //2-Dimention Histograms
- static const int NHisto2 = 2;
+ const int NHisto2 = 2;
 
   char* label2[NHisto2];
   label2[0] = "Barrel_Longitudinal";

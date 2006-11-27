@@ -23,7 +23,7 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 23; 
+ const int NHisto = 23; 
  char* label[NHisto];
  
  label[0] = "Ecal_EEOverETotal";
@@ -155,7 +155,7 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
  }
 
  //2-Dimention Histograms
- static const int NHisto2 = 2;
+ const int NHisto2 = 2;
 
   char* label2[NHisto2];
   label2[0] = "Endcap_Longitudinal";
@@ -195,7 +195,7 @@ void Simhit30GeV_Endcap(TString inputfile="simhitoutput.root",
 
 
  //TProfiles 
-  static const int NHisto3 = 1;
+  const int NHisto3 = 1;
   char* label3[NHisto3];
   label3[0] = "Preshower_EEOverES_zp";
 

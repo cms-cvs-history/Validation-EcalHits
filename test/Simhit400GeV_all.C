@@ -23,7 +23,7 @@ void Simhit400GeV_all(TString inputfile="simhitoutput.root",
  float  TotalE = EcalInfo.momentum().e();
 
  //1-Dimension Histograms.
- static const int NHisto = 43; 
+ const int NHisto = 43; 
  char* label[NHisto];
  
  label[0] = "Barrel_E1x1";
@@ -262,7 +262,7 @@ void Simhit400GeV_all(TString inputfile="simhitoutput.root",
  }
 
  //2-Dimention Histograms
- static const int NHisto2 = 4;
+ const int NHisto2 = 4;
 
   char* label2[NHisto2];
   label2[0] = "Barrel_Longitudinal";
@@ -333,7 +333,7 @@ void Simhit400GeV_all(TString inputfile="simhitoutput.root",
 
 
  //TProfiles 
-  static const int NHisto3 = 2;
+  const int NHisto3 = 2;
   char* label3[NHisto3];
   label3[0] = "Preshower_EEOverES_zp";
   label3[1] = "Preshower_EEOverES_zm";
