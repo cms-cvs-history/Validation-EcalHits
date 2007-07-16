@@ -1,0 +1,11 @@
+module ecalSimHitsValidation =  EcalSimHitsValidation {
+	string moduleLabelMC = 'source' 
+	string moduleLabelG4 = 'g4SimHits' 
+        string EBHitsCollection = 'EcalHitsEB'
+        string EEHitsCollection = 'EcalHitsEE'
+        string ESHitsCollection = 'EcalHitsES'
+
+        untracked string outputFile = 'EcalSimHitsValidation.root'
+        untracked bool verbose = true
+  }
+                                  

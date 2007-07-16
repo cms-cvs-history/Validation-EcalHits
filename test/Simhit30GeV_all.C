@@ -398,8 +398,7 @@ void Simhit30GeV_all( TString inputfile="simhitoutput.root",
 
  cout<<"Total E = "<<TotalE<<endl;
 
- // TFile OutFile("EcalSimHitHisto_30GeV.root","RECREATE") ;
- TFile OutFile(outputfile,"RECREATE") ;
+ TFile OutFile("EcalSimHitHisto_30GeV.root","RECREATE") ;
 
   for ( int ih  =0; ih < NHisto;  ih++ )  { h1[ih] ->Write(); }
   for ( int ih2 =0; ih2< NHisto2; ih2++ ) { h2[ih2]->Write(); }

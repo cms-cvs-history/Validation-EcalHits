@@ -1,0 +1,6 @@
+  module ecalBarrelSimHitsValidation = EcalBarrelSimHitsValidation{ 
+        string moduleLabelG4 = 'g4SimHits'
+	string EBHitsCollection = 'EcalHitsEB'	
+	string ValidationCollection = 'EcalValidInfo'
+        untracked bool verbose = true 
+  }     
