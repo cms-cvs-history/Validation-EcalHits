@@ -1,6 +1,3 @@
-  # Geometry service for reconstruction      
-  include "Geometry/CaloEventSetup/data/CaloGeometry.cff"
-
   # Run the complete ECAL hits validation set
   include "Validation/EcalHits/data/ecalSimHitsValidation.cfi"
   include "Validation/EcalHits/data/ecalBarrelSimHitsValidation.cfi"
