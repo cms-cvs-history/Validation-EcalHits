@@ -1,7 +1,0 @@
-  module ecalPreshowerSimHitsValidation = EcalPreshowerSimHitsValidation{ 
-	string moduleLabelMC    = 'source'
-	string moduleLabelG4    = 'g4SimHits'
-	string EEHitsCollection = 'EcalHitsEE'
-	string ESHitsCollection = 'EcalHitsES'
-        untracked bool verbose = true 
-  }
