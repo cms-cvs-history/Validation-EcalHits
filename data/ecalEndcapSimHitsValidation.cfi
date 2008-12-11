@@ -1,6 +1,0 @@
- module ecalEndcapSimHitsValidation = EcalEndcapSimHitsValidation{ 
-	string moduleLabelG4 = 'g4SimHits'
-        string EEHitsCollection = 'EcalHitsEE'
-	string ValidationCollection = 'EcalValidInfo'
-        untracked bool verbose = true 
- }                                  
