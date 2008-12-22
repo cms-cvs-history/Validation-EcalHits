@@ -1,7 +1,0 @@
-  # Run the complete ECAL hits validation set
-  include "Validation/EcalHits/data/ecalSimHitsValidation.cfi"
-  include "Validation/EcalHits/data/ecalBarrelSimHitsValidation.cfi"
-  include "Validation/EcalHits/data/ecalEndcapSimHitsValidation.cfi"
-  include "Validation/EcalHits/data/ecalPreshowerSimHitsValidation.cfi"
-
-  sequence ecalSimHitsValidationSequence = { ecalSimHitsValidation , ecalBarrelSimHitsValidation , ecalEndcapSimHitsValidation , ecalPreshowerSimHitsValidation }
